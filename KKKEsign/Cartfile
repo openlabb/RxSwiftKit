@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift" ~> 2.6.0
+github "Moya/Moya" "7.0.0"
+github "Thoughtbot/Argo" ~> 3.0.1
+github "SnapKit/SnapKit" >= 0.15.0
