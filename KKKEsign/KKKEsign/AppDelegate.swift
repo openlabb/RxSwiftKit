@@ -16,8 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         setupIFlySettings()
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.rootViewController = KKKSignUpViewController()
+        window!.makeKeyAndVisible()
         return true
     }
+    
+    
     
     func setupIFlySettings() {
         IFlySetting.setLogFile(.LVL_ALL)

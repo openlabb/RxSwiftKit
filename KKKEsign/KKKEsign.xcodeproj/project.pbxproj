@@ -12,6 +12,12 @@
 		4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034A1D7D5B8A00474AC0 /* Main.storyboard */; };
 		4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */; };
 		4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */; };
+		4B8036D21D8A52C5000D2FF6 /* KKKSignUpInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */; };
+		4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */; };
+		4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */; };
+		4B8036DA1D8AA2C8000D2FF6 /* KKKSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */; };
+		4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */; };
+		4B8036DE1D8AEDC3000D2FF6 /* KKKViewModelServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */; };
 		4BF4426D1D87EFC70039D14A /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442491D87EFC70039D14A /* iflyMSC.framework */; };
 		4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */; };
 		4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424B1D87EFC70039D14A /* KKKDetector.swift */; };
@@ -68,6 +74,7 @@
 		4BF442D51D87F7B50039D14A /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D31D87F7B50039D14A /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BF442D71D8807820039D14A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D61D8807820039D14A /* SnapKit.framework */; };
 		4BF442D81D8807820039D14A /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D61D8807820039D14A /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BF442DD1D8904F80039D14A /* KKKSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +109,12 @@
 		4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5603501D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5603521D7D5B8A00474AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKSignUpInView.swift; sourceTree = "<group>"; };
+		4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractListViewController.swift; path = Contracts/ContractListViewController.swift; sourceTree = "<group>"; };
+		4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractViewController.swift; path = Contracts/ContractViewController.swift; sourceTree = "<group>"; };
+		4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKSignatureView.swift; path = KKKSignature/KKKSignatureView.swift; sourceTree = "<group>"; };
+		4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewModel.swift; path = KKKLoginService/KKKLoginViewModel.swift; sourceTree = "<group>"; };
+		4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKViewModelServer.swift; path = KKKLoginService/KKKViewModelServer.swift; sourceTree = "<group>"; };
 		4BF442491D87EFC70039D14A /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDectViewController.swift; sourceTree = "<group>"; };
 		4BF4424B1D87EFC70039D14A /* KKKDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDetector.swift; sourceTree = "<group>"; };
@@ -159,6 +172,7 @@
 		4BF442D01D87F7AD0039D14A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4BF442D31D87F7B50039D14A /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = ../Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		4BF442D61D8807820039D14A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKSignUpViewController.swift; path = KKKLoginService/KKKSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,26 +233,36 @@
 		4B5603451D7D5B8A00474AC0 /* KKKEsign */ = {
 			isa = PBXGroup;
 			children = (
+				4B8036D81D8AA27E000D2FF6 /* Signature */,
+				4B8036D31D8AA196000D2FF6 /* Contract */,
 				4BF4429F1D87F0E10039D14A /* Support */,
 				4BF4420D1D87EE880039D14A /* Lib */,
 			);
 			path = KKKEsign;
 			sourceTree = "<group>";
 		};
+		4B8036D31D8AA196000D2FF6 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */,
+				4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */,
+			);
+			name = Contract;
+			sourceTree = "<group>";
+		};
+		4B8036D81D8AA27E000D2FF6 /* Signature */ = {
+			isa = PBXGroup;
+			children = (
+				4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */,
+			);
+			name = Signature;
+			sourceTree = "<group>";
+		};
 		4BF4420D1D87EE880039D14A /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				4BF442D61D8807820039D14A /* SnapKit.framework */,
-				4BF442D31D87F7B50039D14A /* RxMoya.framework */,
-				4BF442D01D87F7AD0039D14A /* RxCocoa.framework */,
-				4BF442CD1D87F79E0039D14A /* RxBlocking.framework */,
-				4BF442CA1D87F7980039D14A /* ReactiveMoya.framework */,
-				4BF442C71D87F7920039D14A /* ReactiveCocoa.framework */,
-				4BF442C41D87F7620039D14A /* Result.framework */,
-				4BF442BC1D87F4640039D14A /* Alamofire.framework */,
-				4BF442B11D87F3300039D14A /* Argo.framework */,
-				4BF442B21D87F3300039D14A /* Moya.framework */,
-				4BF442B31D87F3300039D14A /* RxSwift.framework */,
+				4BF442DB1D88FEAB0039D14A /* KKKLoginService */,
+				4BF442D91D8853280039D14A /* Vendors */,
 				4BF442481D87EFC70039D14A /* KKKFaceService */,
 			);
 			name = Lib;
@@ -332,12 +356,38 @@
 		4BF4429F1D87F0E10039D14A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				4BF442DA1D88535C0039D14A /* Frameworks */,
 				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
 				4B5603481D7D5B8A00474AC0 /* ViewController.swift */,
 				4B56034A1D7D5B8A00474AC0 /* Main.storyboard */,
 				4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */,
 				4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */,
 				4B5603521D7D5B8A00474AC0 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		4BF442D91D8853280039D14A /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				4BF442D61D8807820039D14A /* SnapKit.framework */,
+				4BF442D31D87F7B50039D14A /* RxMoya.framework */,
+				4BF442D01D87F7AD0039D14A /* RxCocoa.framework */,
+				4BF442CD1D87F79E0039D14A /* RxBlocking.framework */,
+				4BF442CA1D87F7980039D14A /* ReactiveMoya.framework */,
+				4BF442C71D87F7920039D14A /* ReactiveCocoa.framework */,
+				4BF442C41D87F7620039D14A /* Result.framework */,
+				4BF442BC1D87F4640039D14A /* Alamofire.framework */,
+				4BF442B11D87F3300039D14A /* Argo.framework */,
+				4BF442B21D87F3300039D14A /* Moya.framework */,
+				4BF442B31D87F3300039D14A /* RxSwift.framework */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		4BF442DA1D88535C0039D14A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
 				4BF4429D1D87F0CF0039D14A /* UIKit.framework */,
 				4BF4429B1D87F0CB0039D14A /* AddressBook.framework */,
 				4BF442991D87F0C50039D14A /* AssetsLibrary.framework */,
@@ -355,7 +405,18 @@
 				4BF442811D87F07F0039D14A /* libstdc++.tbd */,
 				4BF4427F1D87F0770039D14A /* libz.tbd */,
 			);
-			name = Support;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BF442DB1D88FEAB0039D14A /* KKKLoginService */ = {
+			isa = PBXGroup;
+			children = (
+				4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */,
+				4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */,
+				4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */,
+				4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */,
+			);
+			name = KKKLoginService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,21 +517,28 @@
 				4BF4427D1D87EFC70039D14A /* IFlyFaceResultKeys.m in Sources */,
 				4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */,
 				4BF4427B1D87EFC70039D14A /* PermissionDetector.m in Sources */,
+				4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */,
 				4BF442751D87EFC70039D14A /* CaptureManager.m in Sources */,
+				4BF442DD1D8904F80039D14A /* KKKSignUpViewController.swift in Sources */,
 				4BF4427C1D87EFC70039D14A /* IFlyFaceResultDetector.m in Sources */,
 				4BF442761D87EFC70039D14A /* CaptureSessionManager.m in Sources */,
+				4B8036DE1D8AEDC3000D2FF6 /* KKKViewModelServer.swift in Sources */,
 				4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */,
 				4BF442711D87EFC70039D14A /* KKKDetectValidatorEye.swift in Sources */,
 				4BF442701D87EFC70039D14A /* KKKDetectStatusValidator.swift in Sources */,
 				4BF442781D87EFC70039D14A /* IFlyFaceImage.m in Sources */,
 				4BF442771D87EFC70039D14A /* CalculatorTools.m in Sources */,
 				4BF442741D87EFC70039D14A /* CanvasView.m in Sources */,
+				4B8036DA1D8AA2C8000D2FF6 /* KKKSignatureView.swift in Sources */,
+				4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */,
 				4BF442731D87EFC70039D14A /* KKKDetectValidatorMouth.swift in Sources */,
 				4BF4427E1D87EFC70039D14A /* IFlyFaceResultTrack.m in Sources */,
 				4BF442791D87EFC70039D14A /* UIImage+compress.m in Sources */,
+				4B8036D21D8A52C5000D2FF6 /* KKKSignUpInView.swift in Sources */,
 				4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */,
 				4BF4427A1D87EFC70039D14A /* UIImage+Extensions.m in Sources */,
 				4BF442721D87EFC70039D14A /* KKKDetectValidatorHead.swift in Sources */,
+				4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
