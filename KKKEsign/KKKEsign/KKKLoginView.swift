@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-
-
 class KKKRegisterView: KKKLoginBaseView {
     var mobileV:lableTextField = lableTextField(title: "手机号", hint: "请输入11位手机号")
     var pinV:lableTextFieldButton = lableTextFieldButton(title: "验证码", hint: "4位验证码", btnName: "获取验证码")

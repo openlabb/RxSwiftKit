@@ -89,14 +89,14 @@ extension KKKEsignAPI : TargetType{
     var sampleData:NSData{
         switch self {
         case .RequestPIN(_):
-            return stubbedResponse("pin")
+            return stubbedResponse("KKKpin")
         case .Register(_,_,_):
             return stubbedResponse("KKKpin")
         case .Login(_, _):
 //            return stubbedResponse("KKK\(mobile)")
             return stubbedResponse("KKK13241327921")
         default:
-            return stubbedResponse("XAuth")
+            return stubbedResponse("KKKpin")
         }
     }
 

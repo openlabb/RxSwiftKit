@@ -21,7 +21,6 @@
 		4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034A1D7D5B8A00474AC0 /* Main.storyboard */; };
 		4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */; };
 		4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */; };
-		4B56387C1DA21BA400D8BC56 /* XAuth.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B56387B1DA21BA400D8BC56 /* XAuth.json */; };
 		4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B56387D1DA21BC000D8BC56 /* KKKpin.json */; };
 		4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */; };
 		4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */; };
@@ -29,7 +28,6 @@
 		4B8036DA1D8AA2C8000D2FF6 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */; };
 		4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */; };
 		4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */; };
-		4BA28F941DAE2C9300C0C608 /* KKKLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */; };
 		4BB0AF911DAFDF7200167261 /* KKKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */; };
 		4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF921DAFE06C00167261 /* KKKRouter.swift */; };
 		4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF01371DB260FE00C32804 /* KKKUserService.swift */; };
@@ -90,7 +88,6 @@
 		4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5603501D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5603521D7D5B8A00474AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B56387B1DA21BA400D8BC56 /* XAuth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XAuth.json; sourceTree = "<group>"; };
 		4B56387D1DA21BC000D8BC56 /* KKKpin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KKKpin.json; sourceTree = "<group>"; };
 		4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKLoginView.swift; sourceTree = "<group>"; };
 		4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractListViewController.swift; path = Contracts/ContractListViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 		4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignatureView.swift; path = KKKSignature/SignatureView.swift; sourceTree = "<group>"; };
 		4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewModel.swift; path = KKKLoginService/KKKLoginViewModel.swift; sourceTree = "<group>"; };
 		4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKValidateService.swift; path = KKKLoginService/KKKValidateService.swift; sourceTree = "<group>"; };
-		4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginService.swift; path = KKKLoginService/KKKLoginService.swift; sourceTree = "<group>"; };
 		4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKBaseViewController.swift; sourceTree = "<group>"; };
 		4BB0AF921DAFE06C00167261 /* KKKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKRouter.swift; sourceTree = "<group>"; };
 		4BBF01371DB260FE00C32804 /* KKKUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKUserService.swift; path = KKKUserService/KKKUserService.swift; sourceTree = "<group>"; };
@@ -277,7 +273,6 @@
 			children = (
 				4B56387D1DA21BC000D8BC56 /* KKKpin.json */,
 				4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */,
-				4B56387B1DA21BA400D8BC56 /* XAuth.json */,
 			);
 			name = json;
 			sourceTree = "<group>";
@@ -453,7 +448,6 @@
 				4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */,
 				4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */,
 				4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */,
-				4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */,
 			);
 			name = KKKLoginService;
 			sourceTree = "<group>";
@@ -529,7 +523,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B56387C1DA21BA400D8BC56 /* XAuth.json in Resources */,
 				4B18659D1DB77E1300F2CC44 /* KKK13241327921.json in Resources */,
 				4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */,
 				4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */,
@@ -639,7 +632,6 @@
 				4BF442791D87EFC70039D14A /* UIImage+compress.m in Sources */,
 				4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */,
 				4B0DE09D1DAA303700552A3B /* KKKEsignAPI.swift in Sources */,
-				4BA28F941DAE2C9300C0C608 /* KKKLoginService.swift in Sources */,
 				4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */,
 				4BF4427A1D87EFC70039D14A /* UIImage+Extensions.m in Sources */,
 				4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */,
