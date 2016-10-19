@@ -16,14 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         setupIFlySettings()
-        
+        KKKRouter.config()
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = KKKSignUpViewController()
+        window!.rootViewController = KKKRouter.rootViewController()
         window!.makeKeyAndVisible()
+//        KKKRouter.goToLogin()
+
         return true
     }
-    
-    
     
     func setupIFlySettings() {
         IFlySetting.setLogFile(.LVL_ALL)

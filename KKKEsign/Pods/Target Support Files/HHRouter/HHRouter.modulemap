@@ -1,0 +1,6 @@
+framework module HHRouter {
+  umbrella header "HHRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

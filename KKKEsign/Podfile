@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+use_frameworks!
+target "KKKEsign" do
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'Moya'
+pod 'Moya/RxSwift'
+pod 'Argo'
+pod 'Curry'
+pod 'SnapKit'
+pod 'Toast-Swift', '~> 1.3.0'
+pod 'HHRouter', '~> 0.1.8'
+pod 'SwiftyUserDefaults', '~> 2.1.3'
+
+end

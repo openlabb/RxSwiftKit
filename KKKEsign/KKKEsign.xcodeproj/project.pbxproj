@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0DB29D1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */; };
+		4B0DE0991DAA2F2B00552A3B /* Observable+KKKNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DE0981DAA2F2B00552A3B /* Observable+KKKNetworking.swift */; };
+		4B0DE09D1DAA303700552A3B /* KKKEsignAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DE09C1DAA303700552A3B /* KKKEsignAPI.swift */; };
+		4B0DE0A01DAA30F100552A3B /* KKKItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0DE09F1DAA30F100552A3B /* KKKItems.swift */; };
+		4B1865991DB4DE0200F2CC44 /* KKKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1865981DB4DE0200F2CC44 /* KKKLoginViewController.swift */; };
+		4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */; };
+		4B18659D1DB77E1300F2CC44 /* KKK13241327921.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */; };
+		4B50930A1DACBE47003AC7B6 /* KKKToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5093091DACBE47003AC7B6 /* KKKToast.swift */; };
+		4B50930C1DACC22F003AC7B6 /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */; };
 		4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */; };
 		4B5603491D7D5B8A00474AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5603481D7D5B8A00474AC0 /* ViewController.swift */; };
 		4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034A1D7D5B8A00474AC0 /* Main.storyboard */; };
 		4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */; };
 		4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */; };
-		4B8036D21D8A52C5000D2FF6 /* KKKSignUpInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */; };
+		4B56387C1DA21BA400D8BC56 /* XAuth.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B56387B1DA21BA400D8BC56 /* XAuth.json */; };
+		4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B56387D1DA21BC000D8BC56 /* KKKpin.json */; };
+		4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */; };
 		4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */; };
 		4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */; };
-		4B8036DA1D8AA2C8000D2FF6 /* KKKSignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */; };
+		4B8036DA1D8AA2C8000D2FF6 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */; };
 		4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */; };
-		4B8036DE1D8AEDC3000D2FF6 /* KKKViewModelServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */; };
+		4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */; };
+		4BA28F941DAE2C9300C0C608 /* KKKLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */; };
+		4BB0AF911DAFDF7200167261 /* KKKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */; };
+		4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF921DAFE06C00167261 /* KKKRouter.swift */; };
+		4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF01371DB260FE00C32804 /* KKKUserService.swift */; };
+		4BC449B01D919B010046966A /* testkkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC449AF1D919B010046966A /* testkkViewController.swift */; };
 		4BF4426D1D87EFC70039D14A /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442491D87EFC70039D14A /* iflyMSC.framework */; };
 		4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */; };
 		4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424B1D87EFC70039D14A /* KKKDetector.swift */; };
@@ -52,56 +68,21 @@
 		4BF4429A1D87F0C50039D14A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442991D87F0C50039D14A /* AssetsLibrary.framework */; };
 		4BF4429C1D87F0CB0039D14A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF4429B1D87F0CB0039D14A /* AddressBook.framework */; };
 		4BF4429E1D87F0CF0039D14A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF4429D1D87F0CF0039D14A /* UIKit.framework */; };
-		4BF442B41D87F3300039D14A /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B11D87F3300039D14A /* Argo.framework */; };
-		4BF442B51D87F3300039D14A /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B11D87F3300039D14A /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442B61D87F3300039D14A /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B21D87F3300039D14A /* Moya.framework */; };
-		4BF442B71D87F3300039D14A /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B21D87F3300039D14A /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442B81D87F3300039D14A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B31D87F3300039D14A /* RxSwift.framework */; };
-		4BF442B91D87F3300039D14A /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442B31D87F3300039D14A /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442BD1D87F4640039D14A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442BC1D87F4640039D14A /* Alamofire.framework */; };
-		4BF442BE1D87F4640039D14A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442BC1D87F4640039D14A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442C51D87F7620039D14A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442C41D87F7620039D14A /* Result.framework */; };
-		4BF442C61D87F7620039D14A /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442C41D87F7620039D14A /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442C81D87F7920039D14A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442C71D87F7920039D14A /* ReactiveCocoa.framework */; };
-		4BF442C91D87F7920039D14A /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442C71D87F7920039D14A /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442CB1D87F7980039D14A /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442CA1D87F7980039D14A /* ReactiveMoya.framework */; };
-		4BF442CC1D87F7980039D14A /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442CA1D87F7980039D14A /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442CE1D87F79E0039D14A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442CD1D87F79E0039D14A /* RxBlocking.framework */; };
-		4BF442CF1D87F79E0039D14A /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442CD1D87F79E0039D14A /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442D11D87F7AD0039D14A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D01D87F7AD0039D14A /* RxCocoa.framework */; };
-		4BF442D21D87F7AD0039D14A /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D01D87F7AD0039D14A /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442D41D87F7B50039D14A /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D31D87F7B50039D14A /* RxMoya.framework */; };
-		4BF442D51D87F7B50039D14A /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D31D87F7B50039D14A /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442D71D8807820039D14A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D61D8807820039D14A /* SnapKit.framework */; };
-		4BF442D81D8807820039D14A /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442D61D8807820039D14A /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BF442DD1D8904F80039D14A /* KKKSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */; };
+		4BF442DD1D8904F80039D14A /* KKKRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF442DC1D8904F80039D14A /* KKKRegisterViewController.swift */; };
+		F7D78658EAB95D6BE5D38D1E /* Pods_KKKEsign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387ACA03B9E75828FAF243A0 /* Pods_KKKEsign.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4BF442B01D87F30B0039D14A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4BF442D51D87F7B50039D14A /* RxMoya.framework in Embed Frameworks */,
-				4BF442D21D87F7AD0039D14A /* RxCocoa.framework in Embed Frameworks */,
-				4BF442B71D87F3300039D14A /* Moya.framework in Embed Frameworks */,
-				4BF442C91D87F7920039D14A /* ReactiveCocoa.framework in Embed Frameworks */,
-				4BF442CC1D87F7980039D14A /* ReactiveMoya.framework in Embed Frameworks */,
-				4BF442CF1D87F79E0039D14A /* RxBlocking.framework in Embed Frameworks */,
-				4BF442B51D87F3300039D14A /* Argo.framework in Embed Frameworks */,
-				4BF442C61D87F7620039D14A /* Result.framework in Embed Frameworks */,
-				4BF442B91D87F3300039D14A /* RxSwift.framework in Embed Frameworks */,
-				4BF442BE1D87F4640039D14A /* Alamofire.framework in Embed Frameworks */,
-				4BF442D81D8807820039D14A /* SnapKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		387ACA03B9E75828FAF243A0 /* Pods_KKKEsign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKKEsign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Appdelegate+KKKGlobalAction.swift"; sourceTree = "<group>"; };
+		4B0DE0981DAA2F2B00552A3B /* Observable+KKKNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+KKKNetworking.swift"; sourceTree = "<group>"; };
+		4B0DE09C1DAA303700552A3B /* KKKEsignAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKEsignAPI.swift; path = NetWorking/KKKEsignAPI.swift; sourceTree = "<group>"; };
+		4B0DE09F1DAA30F100552A3B /* KKKItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKItems.swift; path = NetWorking/KKKItems.swift; sourceTree = "<group>"; };
+		4B1865981DB4DE0200F2CC44 /* KKKLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewController.swift; path = KKKLoginService/KKKLoginViewController.swift; sourceTree = "<group>"; };
+		4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKAppDefaults.swift; sourceTree = "<group>"; };
+		4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KKK13241327921.json; sourceTree = "<group>"; };
+		4B5093091DACBE47003AC7B6 /* KKKToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKToast.swift; sourceTree = "<group>"; };
+		4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast_Swift.framework; path = "../../Library/Developer/Xcode/DerivedData/KKKEsign-cazialtdobqmeueratsujulywlon/Build/Products/Debug-iphonesimulator/Toast-Swift/Toast_Swift.framework"; sourceTree = "<group>"; };
 		4B5603431D7D5B8A00474AC0 /* KKKEsign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKKEsign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5603481D7D5B8A00474AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,12 +90,19 @@
 		4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5603501D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5603521D7D5B8A00474AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKSignUpInView.swift; sourceTree = "<group>"; };
+		4B56387B1DA21BA400D8BC56 /* XAuth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = XAuth.json; sourceTree = "<group>"; };
+		4B56387D1DA21BC000D8BC56 /* KKKpin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KKKpin.json; sourceTree = "<group>"; };
+		4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKLoginView.swift; sourceTree = "<group>"; };
 		4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractListViewController.swift; path = Contracts/ContractListViewController.swift; sourceTree = "<group>"; };
 		4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractViewController.swift; path = Contracts/ContractViewController.swift; sourceTree = "<group>"; };
-		4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKSignatureView.swift; path = KKKSignature/KKKSignatureView.swift; sourceTree = "<group>"; };
+		4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignatureView.swift; path = KKKSignature/SignatureView.swift; sourceTree = "<group>"; };
 		4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewModel.swift; path = KKKLoginService/KKKLoginViewModel.swift; sourceTree = "<group>"; };
-		4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKViewModelServer.swift; path = KKKLoginService/KKKViewModelServer.swift; sourceTree = "<group>"; };
+		4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKValidateService.swift; path = KKKLoginService/KKKValidateService.swift; sourceTree = "<group>"; };
+		4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginService.swift; path = KKKLoginService/KKKLoginService.swift; sourceTree = "<group>"; };
+		4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKBaseViewController.swift; sourceTree = "<group>"; };
+		4BB0AF921DAFE06C00167261 /* KKKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKRouter.swift; sourceTree = "<group>"; };
+		4BBF01371DB260FE00C32804 /* KKKUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKUserService.swift; path = KKKUserService/KKKUserService.swift; sourceTree = "<group>"; };
+		4BC449AF1D919B010046966A /* testkkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testkkViewController.swift; sourceTree = "<group>"; };
 		4BF442491D87EFC70039D14A /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDectViewController.swift; sourceTree = "<group>"; };
 		4BF4424B1D87EFC70039D14A /* KKKDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDetector.swift; sourceTree = "<group>"; };
@@ -172,7 +160,9 @@
 		4BF442D01D87F7AD0039D14A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4BF442D31D87F7B50039D14A /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = ../Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		4BF442D61D8807820039D14A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKSignUpViewController.swift; path = KKKLoginService/KKKSignUpViewController.swift; sourceTree = "<group>"; };
+		4BF442DC1D8904F80039D14A /* KKKRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKRegisterViewController.swift; path = KKKLoginService/KKKRegisterViewController.swift; sourceTree = "<group>"; };
+		5D69765E2FD19A2E80AE4B61 /* Pods-KKKEsign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKKEsign.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKKEsign/Pods-KKKEsign.release.xcconfig"; sourceTree = "<group>"; };
+		5DDE8917EEB211EA1781D209 /* Pods-KKKEsign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKKEsign.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKKEsign/Pods-KKKEsign.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,45 +170,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BF442B81D87F3300039D14A /* RxSwift.framework in Frameworks */,
-				4BF442C51D87F7620039D14A /* Result.framework in Frameworks */,
-				4BF442D11D87F7AD0039D14A /* RxCocoa.framework in Frameworks */,
-				4BF442D71D8807820039D14A /* SnapKit.framework in Frameworks */,
+				4B50930C1DACC22F003AC7B6 /* Toast_Swift.framework in Frameworks */,
+				4BF442861D87F0890039D14A /* QuartzCore.framework in Frameworks */,
 				4BF4429E1D87F0CF0039D14A /* UIKit.framework in Frameworks */,
 				4BF4429C1D87F0CB0039D14A /* AddressBook.framework in Frameworks */,
 				4BF4429A1D87F0C50039D14A /* AssetsLibrary.framework in Frameworks */,
 				4BF442981D87F0C00039D14A /* AudioToolbox.framework in Frameworks */,
 				4BF442961D87F0BB0039D14A /* AVFoundation.framework in Frameworks */,
-				4BF442BD1D87F4640039D14A /* Alamofire.framework in Frameworks */,
 				4BF442941D87F0B60039D14A /* CoreVideo.framework in Frameworks */,
 				4BF442921D87F0B00039D14A /* CoreTelephony.framework in Frameworks */,
-				4BF442B61D87F3300039D14A /* Moya.framework in Frameworks */,
-				4BF442CB1D87F7980039D14A /* ReactiveMoya.framework in Frameworks */,
 				4BF442901D87F0A90039D14A /* CoreMotion.framework in Frameworks */,
 				4BF4428E1D87F0A40039D14A /* CoreMedia.framework in Frameworks */,
 				4BF4428C1D87F09F0039D14A /* CoreGraphics.framework in Frameworks */,
 				4BF4428A1D87F0960039D14A /* Foundation.framework in Frameworks */,
-				4BF442CE1D87F79E0039D14A /* RxBlocking.framework in Frameworks */,
-				4BF442B41D87F3300039D14A /* Argo.framework in Frameworks */,
 				4BF442881D87F08F0039D14A /* MobileCoreServices.framework in Frameworks */,
-				4BF442861D87F0890039D14A /* QuartzCore.framework in Frameworks */,
 				4BF442841D87F0840039D14A /* SystemConfiguration.framework in Frameworks */,
 				4BF442821D87F07F0039D14A /* libstdc++.tbd in Frameworks */,
-				4BF442D41D87F7B50039D14A /* RxMoya.framework in Frameworks */,
-				4BF442C81D87F7920039D14A /* ReactiveCocoa.framework in Frameworks */,
 				4BF442801D87F0770039D14A /* libz.tbd in Frameworks */,
 				4BF4426D1D87EFC70039D14A /* iflyMSC.framework in Frameworks */,
+				F7D78658EAB95D6BE5D38D1E /* Pods_KKKEsign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20F62E9434A7EF641F1AC7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DDE8917EEB211EA1781D209 /* Pods-KKKEsign.debug.xcconfig */,
+				5D69765E2FD19A2E80AE4B61 /* Pods-KKKEsign.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B0DB29B1DAF62B500023A68 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4BF442481D87EFC70039D14A /* KKKFaceService */,
+				4B0DE0971DAA2B6300552A3B /* KKKNetWorking */,
+				4BF442DB1D88FEAB0039D14A /* KKKLoginService */,
+				4BBF01361DB260C600C32804 /* KKKUserService */,
+				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
+				4BB0AF921DAFE06C00167261 /* KKKRouter.swift */,
+				4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */,
+				4B5093091DACBE47003AC7B6 /* KKKToast.swift */,
+				4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */,
+				4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */,
+				4BC449AF1D919B010046966A /* testkkViewController.swift */,
+				4B5603481D7D5B8A00474AC0 /* ViewController.swift */,
+				4B56034A1D7D5B8A00474AC0 /* Main.storyboard */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		4B0DE0971DAA2B6300552A3B /* KKKNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				4B5638781DA21B4700D8BC56 /* json */,
+				4B0DE09E1DAA30DE00552A3B /* Model */,
+				4B0DE0981DAA2F2B00552A3B /* Observable+KKKNetworking.swift */,
+				4B0DE09C1DAA303700552A3B /* KKKEsignAPI.swift */,
+			);
+			name = KKKNetWorking;
+			sourceTree = "<group>";
+		};
+		4B0DE09E1DAA30DE00552A3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B0DE09F1DAA30F100552A3B /* KKKItems.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		4B56033A1D7D5B8A00474AC0 = {
 			isa = PBXGroup;
 			children = (
 				4B5603451D7D5B8A00474AC0 /* KKKEsign */,
 				4B5603441D7D5B8A00474AC0 /* Products */,
+				20F62E9434A7EF641F1AC7DC /* Pods */,
+				F18745BB51273378A15AE289 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,12 +264,22 @@
 		4B5603451D7D5B8A00474AC0 /* KKKEsign */ = {
 			isa = PBXGroup;
 			children = (
+				4B0DB29B1DAF62B500023A68 /* App */,
 				4B8036D81D8AA27E000D2FF6 /* Signature */,
 				4B8036D31D8AA196000D2FF6 /* Contract */,
 				4BF4429F1D87F0E10039D14A /* Support */,
-				4BF4420D1D87EE880039D14A /* Lib */,
 			);
 			path = KKKEsign;
+			sourceTree = "<group>";
+		};
+		4B5638781DA21B4700D8BC56 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				4B56387D1DA21BC000D8BC56 /* KKKpin.json */,
+				4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */,
+				4B56387B1DA21BA400D8BC56 /* XAuth.json */,
+			);
+			name = json;
 			sourceTree = "<group>";
 		};
 		4B8036D31D8AA196000D2FF6 /* Contract */ = {
@@ -253,19 +294,17 @@
 		4B8036D81D8AA27E000D2FF6 /* Signature */ = {
 			isa = PBXGroup;
 			children = (
-				4B8036D91D8AA2C8000D2FF6 /* KKKSignatureView.swift */,
+				4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */,
 			);
 			name = Signature;
 			sourceTree = "<group>";
 		};
-		4BF4420D1D87EE880039D14A /* Lib */ = {
+		4BBF01361DB260C600C32804 /* KKKUserService */ = {
 			isa = PBXGroup;
 			children = (
-				4BF442DB1D88FEAB0039D14A /* KKKLoginService */,
-				4BF442D91D8853280039D14A /* Vendors */,
-				4BF442481D87EFC70039D14A /* KKKFaceService */,
+				4BBF01371DB260FE00C32804 /* KKKUserService.swift */,
 			);
-			name = Lib;
+			name = KKKUserService;
 			sourceTree = "<group>";
 		};
 		4BF442481D87EFC70039D14A /* KKKFaceService */ = {
@@ -356,10 +395,8 @@
 		4BF4429F1D87F0E10039D14A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				4BF442D91D8853280039D14A /* Vendors */,
 				4BF442DA1D88535C0039D14A /* Frameworks */,
-				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
-				4B5603481D7D5B8A00474AC0 /* ViewController.swift */,
-				4B56034A1D7D5B8A00474AC0 /* Main.storyboard */,
 				4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */,
 				4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */,
 				4B5603521D7D5B8A00474AC0 /* Info.plist */,
@@ -411,12 +448,23 @@
 		4BF442DB1D88FEAB0039D14A /* KKKLoginService */ = {
 			isa = PBXGroup;
 			children = (
-				4BF442DC1D8904F80039D14A /* KKKSignUpViewController.swift */,
-				4B8036D11D8A52C5000D2FF6 /* KKKSignUpInView.swift */,
+				4BF442DC1D8904F80039D14A /* KKKRegisterViewController.swift */,
+				4B1865981DB4DE0200F2CC44 /* KKKLoginViewController.swift */,
+				4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */,
 				4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */,
-				4B8036DD1D8AEDC3000D2FF6 /* KKKViewModelServer.swift */,
+				4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */,
+				4BA28F931DAE2C9300C0C608 /* KKKLoginService.swift */,
 			);
 			name = KKKLoginService;
+			sourceTree = "<group>";
+		};
+		F18745BB51273378A15AE289 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */,
+				387ACA03B9E75828FAF243A0 /* Pods_KKKEsign.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,11 +474,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B5603551D7D5B8A00474AC0 /* Build configuration list for PBXNativeTarget "KKKEsign" */;
 			buildPhases = (
+				A2F54CB89C24748F41F40376 /* [CP] Check Pods Manifest.lock */,
 				4B56033F1D7D5B8A00474AC0 /* Sources */,
 				4B5603401D7D5B8A00474AC0 /* Frameworks */,
 				4B5603411D7D5B8A00474AC0 /* Resources */,
 				4B56035E1D7E69A800474AC0 /* Run Script */,
-				4BF442B01D87F30B0039D14A /* Embed Frameworks */,
+				6C483C44AF9D3BDE15C48F7D /* [CP] Embed Pods Frameworks */,
+				59B9D02FD97676A31A4E8621 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -479,6 +529,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B56387C1DA21BA400D8BC56 /* XAuth.json in Resources */,
+				4B18659D1DB77E1300F2CC44 /* KKK13241327921.json in Resources */,
+				4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */,
 				4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */,
 				4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */,
 				4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */,
@@ -494,10 +547,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -506,6 +555,51 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		59B9D02FD97676A31A4E8621 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKKEsign/Pods-KKKEsign-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C483C44AF9D3BDE15C48F7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKKEsign/Pods-KKKEsign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2F54CB89C24748F41F40376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -513,30 +607,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */,
 				4B5603491D7D5B8A00474AC0 /* ViewController.swift in Sources */,
 				4BF4427D1D87EFC70039D14A /* IFlyFaceResultKeys.m in Sources */,
 				4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */,
+				4B0DB29D1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift in Sources */,
+				4B0DE0991DAA2F2B00552A3B /* Observable+KKKNetworking.swift in Sources */,
+				4BB0AF911DAFDF7200167261 /* KKKBaseViewController.swift in Sources */,
 				4BF4427B1D87EFC70039D14A /* PermissionDetector.m in Sources */,
 				4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */,
 				4BF442751D87EFC70039D14A /* CaptureManager.m in Sources */,
-				4BF442DD1D8904F80039D14A /* KKKSignUpViewController.swift in Sources */,
+				4B1865991DB4DE0200F2CC44 /* KKKLoginViewController.swift in Sources */,
+				4BF442DD1D8904F80039D14A /* KKKRegisterViewController.swift in Sources */,
 				4BF4427C1D87EFC70039D14A /* IFlyFaceResultDetector.m in Sources */,
 				4BF442761D87EFC70039D14A /* CaptureSessionManager.m in Sources */,
-				4B8036DE1D8AEDC3000D2FF6 /* KKKViewModelServer.swift in Sources */,
+				4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */,
+				4BC449B01D919B010046966A /* testkkViewController.swift in Sources */,
+				4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */,
 				4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */,
 				4BF442711D87EFC70039D14A /* KKKDetectValidatorEye.swift in Sources */,
 				4BF442701D87EFC70039D14A /* KKKDetectStatusValidator.swift in Sources */,
 				4BF442781D87EFC70039D14A /* IFlyFaceImage.m in Sources */,
 				4BF442771D87EFC70039D14A /* CalculatorTools.m in Sources */,
 				4BF442741D87EFC70039D14A /* CanvasView.m in Sources */,
-				4B8036DA1D8AA2C8000D2FF6 /* KKKSignatureView.swift in Sources */,
+				4B8036DA1D8AA2C8000D2FF6 /* SignatureView.swift in Sources */,
+				4B0DE0A01DAA30F100552A3B /* KKKItems.swift in Sources */,
+				4B50930A1DACBE47003AC7B6 /* KKKToast.swift in Sources */,
 				4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */,
 				4BF442731D87EFC70039D14A /* KKKDetectValidatorMouth.swift in Sources */,
 				4BF4427E1D87EFC70039D14A /* IFlyFaceResultTrack.m in Sources */,
 				4BF442791D87EFC70039D14A /* UIImage+compress.m in Sources */,
-				4B8036D21D8A52C5000D2FF6 /* KKKSignUpInView.swift in Sources */,
+				4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */,
+				4B0DE09D1DAA303700552A3B /* KKKEsignAPI.swift in Sources */,
+				4BA28F941DAE2C9300C0C608 /* KKKLoginService.swift in Sources */,
 				4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */,
 				4BF4427A1D87EFC70039D14A /* UIImage+Extensions.m in Sources */,
+				4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */,
 				4BF442721D87EFC70039D14A /* KKKDetectValidatorHead.swift in Sources */,
 				4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */,
 			);
@@ -651,12 +757,12 @@
 		};
 		4B5603561D7D5B8A00474AC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDE8917EEB211EA1781D209 /* Pods-KKKEsign.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/KKKEsign/tools",
 					"$(PROJECT_DIR)/KKKEsign",
 					"$(PROJECT_DIR)/KKKEsign/KKKFaceService",
@@ -671,12 +777,12 @@
 		};
 		4B5603571D7D5B8A00474AC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D69765E2FD19A2E80AE4B61 /* Pods-KKKEsign.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/KKKEsign/tools",
 					"$(PROJECT_DIR)/KKKEsign",
 					"$(PROJECT_DIR)/KKKEsign/KKKFaceService",
