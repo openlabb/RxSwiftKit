@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>拖拽签名</title>
+    <link  href="css/common.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <style media="screen">
+      .js_popup{
+        display: block;
+        width: 90%;
+        height: 43px;
+        line-height: 43px;
+        text-align: center;
+        color:#fff;
+        background: #318df4;
+        border-radius: 100px;
+        margin: 0 auto;
+      }
+    </style>
+</head>
+<body class="grayBg x_one">
+<header id="header" class="clearfix">
+    <a  href="x_one2.html" ><img src="img/back.png">&nbsp;返回</a>
+    短信验证
+</header>
+<div class="content">
+    <br/>
+    <img src="img/x_two_1.jpg" width="100%" usemap="#Map"/>
+    <a  href="javascript:;" class="js_popup">验证签约</a>
+</div>
+<div class="popupImg">
+    恭喜您签约成功!<br/>
+
+</div>
+<div class="mask">
+</div>
+<script type="text/javascript">
+    $('.js_popup').click(function(){
+        $('.mask,.popupImg').show();
+        setTimeout(function(){
+            location.href="mian_5_2.html";
+        },2000);
+    })
+</script>
+</body>
+</html>

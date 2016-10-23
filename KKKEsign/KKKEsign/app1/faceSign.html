@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="css/common.css" rel="stylesheet" type="text/css" />
+    <title>刷脸签约</title>
+    <link  href="css/common.css" rel="stylesheet" type="text/css" />
+    <style>
+        #header{
+            background-color: #3e4043;
+            color: #fff;
+        }
+        #header a img{
+            width: 15px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+             background: url("img/bg_face1.png") no-repeat;
+            background-size: cover;
+        }
+        input,a{
+            outline:medium
+        }
+      .successIpt{
+          width: 100%;
+          overflow: hidden;
+      }
+      .successIpt .faceSuccess{
+          width: 82%;
+          margin: 29px auto;
+          background-color: #00dab4;
+          font-size: 18px;
+          color: #fff;
+          height: 50px;
+          border-radius: 100px;
+          overflow: hidden;
+      }
+        .faceSuccess img{
+            width: 40px;
+            height: 40px;
+            padding: 5px 5px 0;
+            display: inline-block;
+            float: left;
+        }
+        .faceSuccess p{
+            display: inline-block;
+            float: left;
+            margin-top: 4px;
+        }
+        .faceSuccess p span{
+            display: block;
+        }
+        .faceSuccess p span.congratulations{
+            font-size: 18px;
+        }
+        .faceSuccess p span.sent{
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="clearfix">
+        <a  href="javascript:;" ><img src="img/close.png"></a>
+        刷脸签约
+    </header>
+    <div class="successIpt">
+        <div class="faceSuccess">
+            <img src="img/success.png" alt="" class="successImg">
+            <p>
+                <span class="congratulations"> 恭喜您刷脸签约成功！ </span>
+                <span class="sent">合同已发送给收件人</span>
+            </p>
+
+        </div>
+    </div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+$(function(){
+  setTimeout(function(){
+        location.href="login1.html";
+    },3000);
+})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+html,body,div,section,header,a{margin: 0;padding: 0}
+
+.mian{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+.mian{
+	display: inline-block;
+}
+.mian img{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+
+}
+.list{
+
+	width: 100%;
+	overflow: hidden;
+	margin-bottom:60px; 
+
+}
+.list>li{
+	margin-top:60px; 
+	float: left;
+	text-align: center;
+	width: 50%;
+
+}
+.mian .list img,.mian .list a{
+	display: inline-block;
+	height: 135px;
+	width:107px;
+}
+.buttom{
+	width: 85px;
+	height: 40px;
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+}
+.mian .btn{
+	margin: 0 auto;
+	clear: both;
+	
+	height: 55px;
+	display: block;
+
+}
