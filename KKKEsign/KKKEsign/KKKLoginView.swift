@@ -26,10 +26,10 @@ class KKKRegisterView: KKKLoginBaseView {
 }
 
 class KKKLoginInView: KKKLoginBaseView {
-//    var mobileV:iconTextField = iconTextField(imageName: "手机号", hint: "请输入11位手机号")
-//    var pwdV:iconTextField = iconTextField(imageName: "密码", hint: "6位密码")
-    var mobileV:lableTextField = lableTextField(title: "手机号", hint: "请输入11位手机号")
-    var pwdV:lableTextField = lableTextField(title: "密码", hint: "6位密码")
+    var mobileV:iconTextField = iconTextField(imageName: "name", hint: "请输入11位手机号")
+    var pwdV:iconTextField = iconTextField(imageName: "password", hint: "6位密码")
+//    var mobileV:lableTextField = lableTextField(title: "手机号", hint: "请输入11位手机号")
+//    var pwdV:lableTextField = lableTextField(title: "密码", hint: "6位密码")
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -182,8 +182,8 @@ class lableTextField:UIView{
 class iconTextField:UIView{
     let kTextFieldMarginTop = 20
     let kTextFieldMarginLeft = 20
-    let kIconWidth = 40
-    let kIconHight = 40
+    let kIconWidth = 15
+    let kIconHight = 15
     
     var icon :UIImageView = UIImageView()
     var tf:UITextField = UITextField()
@@ -217,7 +217,7 @@ class iconTextField:UIView{
         self.addSubview(tf)
         tf.snp_makeConstraints { (make) in
             make.top.equalTo(v).offset(kTextFieldMarginTop)
-            make.left.equalTo(icon.snp_right)
+            make.left.equalTo(icon.snp_right).offset(20)
             make.right.equalTo(v).offset(-kTextFieldMarginLeft)
             make.height.equalTo(kIconHight)//icon与textfield等高
         }

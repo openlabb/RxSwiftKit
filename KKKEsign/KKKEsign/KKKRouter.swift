@@ -23,6 +23,14 @@ class KKKRouter{
         let viewController = HHRouter.shared().matchController("/login");
         self.pushViewController(viewController)
     }
+
+    class func goToSignOK(){
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        vc.localFileName = "mian_5_2"
+        appDelegate().window?.rootViewController = viewController
+    }
+    
     
     class func goToRegister() {
         let viewController = HHRouter.shared().matchController("/register/");
@@ -34,25 +42,39 @@ class KKKRouter{
         let vc: ESignWebViewController = viewController as! ESignWebViewController
         let user:KKKUser? = KKKUserService.shareInstance().user
         print("-----当前登录用户 \(user)")
-        vc.localFileName = "userCenter"
+        switch KKKUserService.shareInstance().userType.value
+        {
+            case KKKUserType.KKKUserTypeReceiver:
+                vc.localFileName = "mian_3_2"
+            default:
+                vc.localFileName = "userCenter"
+        }
+        
         appDelegate().window?.rootViewController = viewController
-
         return viewController
     }
     
     class func rootViewController() -> UIViewController {
         let viewController:UIViewController
-        if KKKUserService.shareInstance().isLogin {
-            let user:KKKUser? = KKKUserService.shareInstance().user
-            print("-----当前登录用户 \(user)")
-            
-           viewController = HHRouter.shared().matchController("/html/")
-            let vc: ESignWebViewController = viewController as! ESignWebViewController
-            vc.localFileName = "userCenter"
+//        if KKKUserService.shareInstance().isLogin {
+//            let user:KKKUser? = KKKUserService.shareInstance().user
+//            print("-----当前登录用户 \(user)")
+//            
+//           viewController = HHRouter.shared().matchController("/html/")
+//            let vc: ESignWebViewController = viewController as! ESignWebViewController
+//            switch KKKUserService.shareInstance().userType.value
+//            {
+//            case KKKUserType.KKKUserTypeReceiver:
+//                vc.localFileName = "mian_3_2"
+//            default:
+//                vc.localFileName = "userCenter"
+//            }
+//        }else{
+//            viewController = HHRouter.shared().matchController("/login");
+//        }
+        //不管什么时候打开都是登录窗口，For Demo
+        viewController = HHRouter.shared().matchController("/login");
 
-        }else{
-            viewController = HHRouter.shared().matchController("/login");
-        }
         return viewController
     }
     
@@ -67,6 +89,13 @@ class KKKRouter{
     let viewController = HHRouter.shared().matchController("/faceDetect/");
     self.pushViewController(viewController)
 
+    }
+    
+    class func goToMain(){
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        vc.localFileName = "mian"
+        appDelegate().window?.rootViewController = viewController
     }
 
     //        let time: NSTimeInterval = 0.0

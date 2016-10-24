@@ -20,6 +20,9 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
      var previewView: UIView!
      var testkkView: UIImageView!
      var infoLabel: UILabel!
+    var backMask: UIImageView!
+    var infoImage: UIImageView!
+
     
     var isRegister:Bool
     
@@ -48,8 +51,15 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
         //        fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        self.isRegister = true
+        self.detector = KKKDetector()
+
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.detector.addObserver(self, forKeyPath: "statusData", options: NSKeyValueObservingOptions.New, context: &statusContext)
+
+    }
+
     
     
     override func viewDidAppear(animated: Bool) {
@@ -58,7 +68,7 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
         self.edgesForExtendedLayout = .None;
         self.extendedLayoutIncludesOpaqueBars = false;
         self.modalPresentationCapturesStatusBarAppearance = false;
-        self.navigationController!.navigationBar.translucent = false;
+//        self.navigationController!.navigationBar.translucent = false;
         
         self.view.backgroundColor = UIColor.redColor()
         
@@ -104,7 +114,7 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
     }
     
     func addPrewLayer() -> Void {
-        self.previewView.backgroundColor = UIColor.blueColor()
+        self.previewView.backgroundColor = UIColor.whiteColor()
         self.faceDetector=IFlyFaceDetector.sharedInstance();
         self.faceDetector?.setParameter("1", forKey: "align")
         self.faceDetector?.setParameter("1", forKey: "detect")
@@ -149,27 +159,42 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
             make.height.equalTo(200)
             make.top.equalTo(previewView).offset(100)
         }
+        referFaceView.hidden = true
         
-        testkkView = UIImageView()
-        superView.addSubview(testkkView)
-        testkkView.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(previewView.snp_bottom)
-            make.width.equalTo(testkkView.snp_height).multipliedBy(640/480.0)
+        backMask = UIImageView()
+        superView.addSubview(backMask)
+        backMask.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(superView)
+            make.width.equalTo(superView)
             make.left.equalTo(superView)
             make.bottom.equalTo(superView)
         }
+//        backMask.image = UIImage.init(named: "testmask")
+          backMask.image = UIImage.init(named: "backmask")
+        
+        testkkView = UIImageView()
+//        superView.addSubview(testkkView)
+//        testkkView.snp_makeConstraints { (make) -> Void in
+//            make.top.equalTo(previewView.snp_bottom)
+//            make.width.equalTo(testkkView.snp_height).multipliedBy(640/480.0)
+//            make.left.equalTo(superView)
+//            make.bottom.equalTo(superView)
+//        }
 
         infoLabel = UILabel()
         infoLabel.numberOfLines = 0
         superView.addSubview(infoLabel)
+        infoLabel.text = "请把脸放到框框内"
         infoLabel.snp_makeConstraints { (make) in
-            make.top.equalTo(previewView.snp_bottom)
-            make.left.equalTo(testkkView.snp_right)
-            make.right.equalTo(superView)
-            make.bottom.equalTo(superView)
+            make.top.equalTo(superView).offset(80)
+            make.centerX.equalTo(superView)
+//            make.height.equalTo(superView)
         }
         
-        
+        infoImage = UIImageView()
+                superView.addSubview(infoImage)
+        infoImage.hidden = true
+
     }
     
     func configSubViews() -> Void {
@@ -674,11 +699,11 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
         var info:String
         switch self.detector.status {
         case .KKKFaceDetectStatusWaiting:
-            info = "请把脸部放入橙色框框中..."
+            info = "请将脸对准框内,确保光线充足..."
         case .KKKFaceDetectStatusTooClose:
-            info = "远..一..点,脸放在橙色框框中"
+            info = "请将脸对准框内,稍远一点"
         case .KKKFaceDetectStatusTooFar:
-            info = "近一点，脸放在橙色框框中"
+            info = "请将脸对准框内,稍近一点"
         case .KKKFaceDetectStatusToAdjustFace:
             info = "调整ing..."
         case .KKKFaceDetectStatusToBlinkEye:
@@ -693,19 +718,96 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
             info = "注册失败"
         case .KKKFaceDetectStatusRegisterSuccess:
             info = "注册成功"
-            addLeftBarAction()
+//            addLeftBarAction()
+            self.showSuccessAndJump()
         case .KKKFaceDetectStatusRecognitionFail:
             info = "识别失败"
             addLeftBarAction()
+            
         case .KKKFaceDetectStatusRecognitionSuccess:
             info = "GID:\(self.faceGID):识别成功-\(self.faceScore)分"
-            addLeftBarAction()
+            print(info)
+//            addLeftBarAction()
+            self.showSuccessAndJump()
+
         default:
             info = "默认检测人脸ing..."
         }
-        self.infoLabel.text = prefix + info
-        
+//        self.infoLabel.text = prefix + info
+        self.infoLabel.text = info
     }
+    
+    
+    
+    func showSuccessAndJump()  {
+        self.infoLabel.hidden = true
+        self.infoImage.hidden = false
+
+        var infoName = "registerOK"
+        if !self.isRegister {
+            infoName = "recognizedOK"
+        }
+        
+        if KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver {
+            infoName = "recognizedOKxxx"
+        }
+        
+        
+        infoImage.image = UIImage.init(named: infoName)
+        let superView = self.view
+        infoImage.snp_makeConstraints { (make) -> Void in
+            make.top.equalTo(superView).offset(80)
+            make.centerX.equalTo(superView)
+            make.height.equalTo(50)
+            if self.isRegister {
+                make.width.equalTo(infoImage.snp_height).multipliedBy(470/100)
+            }else{
+                make.width.equalTo(infoImage.snp_height).multipliedBy(500/100)
+            }
+        }
+        
+        AudioServicesPlaySystemSound(1103);
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
+        
+        self.performSelector(#selector(shakeAnmicationForView), withObject: infoImage, afterDelay: 0.2)
+        
+        let time: NSTimeInterval = 3.0
+        let delay = dispatch_time(DISPATCH_TIME_NOW,
+                                  Int64(time * Double(NSEC_PER_SEC)))
+        dispatch_after(delay, dispatch_get_main_queue()) {
+            
+            
+            if(KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver )
+            {
+                KKKRouter.goToSignOK()
+            }else{
+                if(self.isRegister)
+                {
+                    KKKRouter.goToMain()
+                }else{
+                    KKKRouter.goToLogin()
+                }
+            }
+
+        }
+    }
+    
+    
+    func shakeAnmicationForView(view:UIView)  {
+        let layer :CALayer = view.layer
+        let position:CGPoint = layer.position
+        let start:CGPoint = CGPointMake(position.x + 2, position.y)
+        let end:CGPoint = CGPointMake(position.x - 2, position.y)
+        let animation :CABasicAnimation = CABasicAnimation(keyPath: "position")
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionDefault)
+        animation.fromValue = NSValue.init(CGPoint: start)
+        animation.toValue =  NSValue.init(CGPoint: end)
+        animation.duration = 0.1
+        animation.autoreverses = true
+        animation.repeatCount = 4
+        layer.addAnimation(animation, forKey: nil)
+    }
+
 
     
     /*

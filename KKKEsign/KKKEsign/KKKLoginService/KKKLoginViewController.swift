@@ -51,11 +51,15 @@ class KKKLoginViewController: UIViewController{
         self.binding()
         self.bindingData()
         self.setupForDemo()
+        
+        
     }
     
     func setupForDemo()  {
         self.inView.actionButton.layer.cornerRadius = 20
         Driver.just(true).drive(self.inView.actionButton.rx_requestEnable)
+        
+        
         KKKUserService.shareInstance().userType.asDriver().map { num -> Void in
             switch num{
             case .KKKUserTypeReceiver:
@@ -67,7 +71,7 @@ class KKKLoginViewController: UIViewController{
                 self.inView.pwdV.tf.text = "123456"
                 self.jumpBtn.setTitle("切换成签收账号", forState: .Normal)
             }
-            self.showHint("当前已\((self.jumpBtn.titleLabel?.text)! as String)")
+//            self.showHint("当前已\((self.jumpBtn.titleLabel?.text)! as String)")
         }.drive().addDisposableTo(self.disposeBag)
 
     }
@@ -90,7 +94,7 @@ class KKKLoginViewController: UIViewController{
     // MARK: -------子控件
     
     func addSubviews()  {
-        self.inView.mobileV.tf.becomeFirstResponder()
+//        self.inView.mobileV.tf.becomeFirstResponder()
 
         //顶部Logo图
         logoImageView.image = UIImage.init(named: "kkkklogo")
@@ -100,17 +104,17 @@ class KKKLoginViewController: UIViewController{
         var preV:UIView = v
         v.addSubview(logoImageView)
         logoImageView.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(v).offset(20)
+            make.top.equalTo(v).offset(80)
             make.centerX.equalTo(v)
-            make.width.equalTo(v)
-            make.width.equalTo(logoImageView.snp_height).multipliedBy(1674/888.0)
+            make.height.equalTo(100)
+            make.width.equalTo(logoImageView.snp_height).multipliedBy(160/156.0)
         }
         preV = logoImageView
         
         //中间注册输入框和按钮
         v.addSubview(inView)
         inView.snp_makeConstraints { (make) -> Void in
-            make.top.equalTo(preV.snp_bottom).offset(10)
+            make.top.equalTo(preV.snp_bottom).offset(80)
             make.left.equalTo(v).offset(kSignViewMarginX)
             make.right.equalTo(v).offset(-kSignViewMarginX)
             make.height.equalTo((40+10)*3 + 10)//4个控件,每个高度40,间隔10,底部按钮与上面的间隔为10
@@ -129,6 +133,22 @@ class KKKLoginViewController: UIViewController{
         jumpBtn.titleLabel?.font = UIFont.systemFontOfSize(13)
         jumpBtn.setTitleColor(kBaseColor, forState: .Normal)
         jumpBtn.titleLabel?.textAlignment = .Left
+        
+        self.performSelector(#selector(bumpAnimationForView), withObject: inView.actionButton, afterDelay: 0.3)
+    }
+    
+    func bumpAnimationForView(view:UIView){
+        let layer :CALayer = view.layer
+        let animation :CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+        animation.fromValue = NSNumber.init(float: 1)
+        animation.toValue = NSNumber.init(float: 0.6)
+        animation.autoreverses = true
+        animation.duration = 0.6;
+        animation.repeatCount = MAXFLOAT;
+        animation.removedOnCompletion = false;
+        animation.fillMode = kCAFillModeForwards;
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        layer.addAnimation(animation, forKey: nil)
     }
     
     

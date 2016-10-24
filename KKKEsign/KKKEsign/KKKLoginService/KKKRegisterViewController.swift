@@ -11,7 +11,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-let kBackColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
+//let kBackColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
+let kBackColor = UIColor.whiteColor()
 let kBaseColor = UIColor.init(red: 41/255.0, green: 138/255.0, blue: 247/255.0, alpha: 1)
 let kSecondsStart:Int = 60
 

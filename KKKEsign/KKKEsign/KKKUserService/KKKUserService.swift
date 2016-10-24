@@ -34,6 +34,9 @@ class KKKUserService{
                 KKKUserService.shareInstance().isLogin = true
             }
             Defaults[.user] = newValue
+            if newValue?.mobile == "15667809876" {
+                self.userType.value = .KKKUserTypeReceiver
+            }
         }
         get{
             
