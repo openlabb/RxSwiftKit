@@ -32,6 +32,12 @@
 		4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF921DAFE06C00167261 /* KKKRouter.swift */; };
 		4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF01371DB260FE00C32804 /* KKKUserService.swift */; };
 		4BC449B01D919B010046966A /* testkkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC449AF1D919B010046966A /* testkkViewController.swift */; };
+		4BD903461DB9C41C00AACEFB /* KKKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD903451DB9C41C00AACEFB /* KKKWebViewController.swift */; };
+		4BD903E81DBCFFE000AACEFB /* ESignWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD903E71DBCFFE000AACEFB /* ESignWebViewController.swift */; };
+		4BD903EF1DBD003300AACEFB /* Base.js in Resources */ = {isa = PBXBuildFile; fileRef = 4BD903EB1DBD003300AACEFB /* Base.js */; };
+		4BD903F01DBD003300AACEFB /* Console.js in Resources */ = {isa = PBXBuildFile; fileRef = 4BD903EC1DBD003300AACEFB /* Console.js */; };
+		4BD903F11DBD003300AACEFB /* Face.js in Resources */ = {isa = PBXBuildFile; fileRef = 4BD903ED1DBD003300AACEFB /* Face.js */; };
+		4BD904911DBDAB8B00AACEFB /* www in Resources */ = {isa = PBXBuildFile; fileRef = 4BD904901DBDAB8B00AACEFB /* www */; };
 		4BF4426D1D87EFC70039D14A /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF442491D87EFC70039D14A /* iflyMSC.framework */; };
 		4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */; };
 		4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF4424B1D87EFC70039D14A /* KKKDetector.swift */; };
@@ -99,6 +105,12 @@
 		4BB0AF921DAFE06C00167261 /* KKKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKRouter.swift; sourceTree = "<group>"; };
 		4BBF01371DB260FE00C32804 /* KKKUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKUserService.swift; path = KKKUserService/KKKUserService.swift; sourceTree = "<group>"; };
 		4BC449AF1D919B010046966A /* testkkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testkkViewController.swift; sourceTree = "<group>"; };
+		4BD903451DB9C41C00AACEFB /* KKKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKWebViewController.swift; path = KKKH5Container/KKKWebViewController.swift; sourceTree = "<group>"; };
+		4BD903E71DBCFFE000AACEFB /* ESignWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESignWebViewController.swift; sourceTree = "<group>"; };
+		4BD903EB1DBD003300AACEFB /* Base.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Base.js; sourceTree = "<group>"; };
+		4BD903EC1DBD003300AACEFB /* Console.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Console.js; sourceTree = "<group>"; };
+		4BD903ED1DBD003300AACEFB /* Face.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Face.js; sourceTree = "<group>"; };
+		4BD904901DBDAB8B00AACEFB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		4BF442491D87EFC70039D14A /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
 		4BF4424A1D87EFC70039D14A /* KKKDectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDectViewController.swift; sourceTree = "<group>"; };
 		4BF4424B1D87EFC70039D14A /* KKKDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKDetector.swift; sourceTree = "<group>"; };
@@ -203,6 +215,7 @@
 		4B0DB29B1DAF62B500023A68 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4BD903441DB9C3F700AACEFB /* KKKH5Container */,
 				4BF442481D87EFC70039D14A /* KKKFaceService */,
 				4B0DE0971DAA2B6300552A3B /* KKKNetWorking */,
 				4BF442DB1D88FEAB0039D14A /* KKKLoginService */,
@@ -300,6 +313,27 @@
 				4BBF01371DB260FE00C32804 /* KKKUserService.swift */,
 			);
 			name = KKKUserService;
+			sourceTree = "<group>";
+		};
+		4BD903441DB9C3F700AACEFB /* KKKH5Container */ = {
+			isa = PBXGroup;
+			children = (
+				4BD903E91DBD003300AACEFB /* plugins */,
+				4BD904901DBDAB8B00AACEFB /* www */,
+				4BD903451DB9C41C00AACEFB /* KKKWebViewController.swift */,
+				4BD903E71DBCFFE000AACEFB /* ESignWebViewController.swift */,
+			);
+			name = KKKH5Container;
+			sourceTree = "<group>";
+		};
+		4BD903E91DBD003300AACEFB /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				4BD903EB1DBD003300AACEFB /* Base.js */,
+				4BD903EC1DBD003300AACEFB /* Console.js */,
+				4BD903ED1DBD003300AACEFB /* Face.js */,
+			);
+			path = plugins;
 			sourceTree = "<group>";
 		};
 		4BF442481D87EFC70039D14A /* KKKFaceService */ = {
@@ -523,11 +557,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD904911DBDAB8B00AACEFB /* www in Resources */,
+				4BD903F01DBD003300AACEFB /* Console.js in Resources */,
 				4B18659D1DB77E1300F2CC44 /* KKK13241327921.json in Resources */,
+				4BD903F11DBD003300AACEFB /* Face.js in Resources */,
 				4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */,
 				4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */,
 				4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */,
 				4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */,
+				4BD903EF1DBD003300AACEFB /* Base.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +649,7 @@
 				4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */,
 				4BF442751D87EFC70039D14A /* CaptureManager.m in Sources */,
 				4B1865991DB4DE0200F2CC44 /* KKKLoginViewController.swift in Sources */,
+				4BD903461DB9C41C00AACEFB /* KKKWebViewController.swift in Sources */,
 				4BF442DD1D8904F80039D14A /* KKKRegisterViewController.swift in Sources */,
 				4BF4427C1D87EFC70039D14A /* IFlyFaceResultDetector.m in Sources */,
 				4BF442761D87EFC70039D14A /* CaptureSessionManager.m in Sources */,
@@ -636,6 +675,7 @@
 				4BF4427A1D87EFC70039D14A /* UIImage+Extensions.m in Sources */,
 				4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */,
 				4BF442721D87EFC70039D14A /* KKKDetectValidatorHead.swift in Sources */,
+				4BD903E81DBCFFE000AACEFB /* ESignWebViewController.swift in Sources */,
 				4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

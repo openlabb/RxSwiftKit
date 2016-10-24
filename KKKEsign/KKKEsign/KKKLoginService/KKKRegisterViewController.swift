@@ -12,7 +12,7 @@ import RxSwift
 import RxCocoa
 
 let kBackColor = UIColor.init(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1)
-let kBaseColor = UIColor.init(red: 48/255.0, green: 141/255.0, blue: 244/255.0, alpha: 1)
+let kBaseColor = UIColor.init(red: 41/255.0, green: 138/255.0, blue: 247/255.0, alpha: 1)
 let kSecondsStart:Int = 60
 
 class KKKRegisterViewController: UIViewController{

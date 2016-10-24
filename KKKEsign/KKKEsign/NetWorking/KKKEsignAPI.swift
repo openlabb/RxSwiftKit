@@ -157,21 +157,14 @@ extension KKKEsignAPI{
     static func login(mobile:String,password:String) -> Driver<Bool>{
         return eSignProvider.request(.Login(mobile, password))
             .mapSuccessfulHTTPToObject(KKKUser)
-            .map{ _ in
+            .map({ (user) -> Bool in
+                KKKUserService.shareInstance().user =  KKKUser(id:user.id,mobile: user.mobile,password: user.password,avatar: user.avatar)
                 return true
-            }.asDriver(onErrorRecover: { (error) -> Driver<Bool> in
+            })
+            .asDriver(onErrorRecover: { (error) -> Driver<Bool> in
                 let err:ORMError = error as! ORMError
-                var ret:Bool = false
-                switch err{
-                case .ORMNotValidData(let message,_):
-                    print("------\(message)")
-                case .ORMNoData:
-                    ret = true
-                    KKKUserService.shareInstance().user =  KKKUser(id:KKKUserService.newUserID(),mobile: mobile,password: password,avatar: "")
-                default:
-                    print("------\(err)")
-                }
-                return Driver.of(ret)
+                print("------\(err)")
+                return Driver.of(false)
             })
     }
 

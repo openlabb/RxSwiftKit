@@ -100,7 +100,7 @@ class KKKLoginViewModel{
         
         
         
-        //发送注册请求
+        //发送登录请求
         let mobilePinPassword = Driver.combineLatest(input.mobile,input.password){($0, $1)}
         self.actionSuccess = input.actionTap.withLatestFrom(mobilePinPassword)
             .flatMapLatest{

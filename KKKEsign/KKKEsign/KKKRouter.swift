@@ -13,9 +13,10 @@ class KKKRouter{
         HHRouter.shared().map("/user/:userId/",toControllerClass: KKKRegisterViewController.self )
         HHRouter.shared().map("/register/",toControllerClass: KKKRegisterViewController.self )
         HHRouter.shared().map("/login/",toControllerClass: KKKLoginViewController.self )
-        HHRouter.shared().map("/contractList/",toControllerClass: ContractListViewController.self )
-        HHRouter.shared().map("/contract/",toControllerClass: ContractViewController.self )
+//        HHRouter.shared().map("/contractList/",toControllerClass: ContractListViewController.self )
+//        HHRouter.shared().map("/contract/",toControllerClass: ContractViewController.self )
         HHRouter.shared().map("/faceDetect/",toControllerClass: KKKDectViewController.self )
+        HHRouter.shared().map("/html/",toControllerClass: ESignWebViewController.self )
     }
     
     class func goToLogin(){
@@ -29,25 +30,44 @@ class KKKRouter{
     }
     
     class func backToHome()->UIViewController{
-        let viewController = HHRouter.shared().matchController("/contractList/");
-        let user:KKKUser = KKKUserService.shareInstance().user!
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        let user:KKKUser? = KKKUserService.shareInstance().user
         print("-----当前登录用户 \(user)")
         appDelegate().window?.rootViewController = viewController
+        vc.localFileName = "userCenter"
+
         return viewController
     }
     
     class func rootViewController() -> UIViewController {
         let viewController:UIViewController
         if KKKUserService.shareInstance().isLogin {
-           viewController = HHRouter.shared().matchController("/contractList/");
             let user:KKKUser? = KKKUserService.shareInstance().user
             print("-----当前登录用户 \(user)")
+            
+           viewController = HHRouter.shared().matchController("/html/")
+            let vc: ESignWebViewController = viewController as! ESignWebViewController
+            vc.localFileName = "userCenter"
+
         }else{
             viewController = HHRouter.shared().matchController("/login");
         }
         return viewController
     }
     
+    
+    class func goToWebViewController(urlString:String){
+        let viewController = HHRouter.shared().matchController("/html");
+        self.pushViewController(viewController)
+    }
+    
+    
+    class func goToFace() {
+    let viewController = HHRouter.shared().matchController("/faceDetect/");
+    self.pushViewController(viewController)
+
+    }
 
     //        let time: NSTimeInterval = 0.0
     //        let delay = dispatch_time(DISPATCH_TIME_NOW,
