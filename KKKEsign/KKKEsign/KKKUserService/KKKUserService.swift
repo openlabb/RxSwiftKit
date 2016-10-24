@@ -8,6 +8,16 @@
 
 import Foundation
 import SwiftyUserDefaults
+import RxSwift
+
+enum KKKUserType:Int {
+    //默认
+    case KKKUserTypeNormal = 0
+    //接收合同的人
+    case KKKUserTypeReceiver
+    
+}
+
 
 class KKKUserService{
 
@@ -48,6 +58,8 @@ class KKKUserService{
         }
 
     }
+    
+    let userType = Variable(KKKUserType.KKKUserTypeNormal)
     
     class func newUserID() -> Int{
         let user = KKKUserService.shareInstance().user

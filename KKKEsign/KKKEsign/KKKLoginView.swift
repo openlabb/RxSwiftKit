@@ -40,6 +40,7 @@ class KKKLoginInView: KKKLoginBaseView {
         let views = [mobileV,pwdV,actionButton]
         self.addSubviews(views)
         actionButton.setTitle("登      录", forState: .Normal)
+        pwdV.tf.secureTextEntry = true
 
     }
 }

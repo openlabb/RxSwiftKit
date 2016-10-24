@@ -141,9 +141,43 @@ extension wkNavigationDelegate {
     public func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
         NSLog(error.debugDescription)
     }
+    
     public func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
         NSLog(error.debugDescription)
     }
+    
+    
+    public func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        //页面开始加载
+        print("---didStartProvisionalNavigation\n")
+
+    }
+    
+    public func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
+        //内容开始返回
+        print("---didCommitNavigation\n")
+    }
+    
+    public func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        //页面加载完成
+        print("---页面加载完成:didFinishNavigation:--\n\r✅--\(((webView.URL?.relativePath)! as NSString).lastPathComponent)")
+    }
+    
+    
+    public func  webView(webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        //收到服务器跳转请求
+        print("---didReceiveServerRedirectForProvisionalNavigation\n")
+
+    }
+
+    public func webView(webView: WKWebView, decidePolicyForNavigationResponse navigationResponse: WKNavigationResponse, decisionHandler: (WKNavigationResponsePolicy) -> Void) {
+        //收到响应，决定是否跳转
+        decisionHandler(.Allow)
+        print("---decidePolicyForNavigationResponse\n")
+
+
+    }
+    
 }
 
 private typealias wkRunPluginDelegate = KKKWebViewController

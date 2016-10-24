@@ -50,7 +50,28 @@ class KKKLoginViewController: UIViewController{
         self.addSubviews()
         self.binding()
         self.bindingData()
+        self.setupForDemo()
     }
+    
+    func setupForDemo()  {
+        self.inView.actionButton.layer.cornerRadius = 20
+        Driver.just(true).drive(self.inView.actionButton.rx_requestEnable)
+        KKKUserService.shareInstance().userType.asDriver().map { num -> Void in
+            switch num{
+            case .KKKUserTypeReceiver:
+                self.inView.mobileV.tf.text = "15667809876"
+                self.inView.pwdV.tf.text = "123456"
+                self.jumpBtn.setTitle("切换成发送账号", forState: .Normal)
+            case .KKKUserTypeNormal:
+                self.inView.mobileV.tf.text = "18756983625"
+                self.inView.pwdV.tf.text = "123456"
+                self.jumpBtn.setTitle("切换成签收账号", forState: .Normal)
+            }
+            self.showHint("当前已\((self.jumpBtn.titleLabel?.text)! as String)")
+        }.drive().addDisposableTo(self.disposeBag)
+
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -102,11 +123,12 @@ class KKKLoginViewController: UIViewController{
             make.bottom.equalTo(v).offset( -10)
             make.left.equalTo(v).offset(kSignViewMarginX)
             make.height.equalTo(40)
-            make.width.equalTo(60)
+            make.width.equalTo(100)
         }
-        jumpBtn.setTitle("注    册", forState: .Normal)
+        jumpBtn.setTitle("注   册 ", forState: .Normal)
         jumpBtn.titleLabel?.font = UIFont.systemFontOfSize(13)
         jumpBtn.setTitleColor(kBaseColor, forState: .Normal)
+        jumpBtn.titleLabel?.textAlignment = .Left
     }
     
     
@@ -143,7 +165,15 @@ class KKKLoginViewController: UIViewController{
         
         //绑定: 注册按钮 驱动-> Variable<登录状态>
         self.jumpBtn.rx_tap.asDriver().driveNext{
-            self.viewModel?.loginStatus.value = .KKKLoginStatusRegistering
+//            self.viewModel?.loginStatus.value = .KKKLoginStatusRegistering
+            //setupForDemo
+            var userType:Int = KKKUserService.shareInstance().userType.value.rawValue
+            if userType == 0{
+                userType = 1
+            }else{
+                userType = 0
+            }
+                KKKUserService.shareInstance().userType.value = KKKUserType(rawValue: userType)!
             }.addDisposableTo(disposeBag)
     }
 

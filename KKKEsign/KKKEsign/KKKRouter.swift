@@ -34,8 +34,8 @@ class KKKRouter{
         let vc: ESignWebViewController = viewController as! ESignWebViewController
         let user:KKKUser? = KKKUserService.shareInstance().user
         print("-----当前登录用户 \(user)")
-        appDelegate().window?.rootViewController = viewController
         vc.localFileName = "userCenter"
+        appDelegate().window?.rootViewController = viewController
 
         return viewController
     }
