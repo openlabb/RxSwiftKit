@@ -38,9 +38,9 @@ class ValidateService{
 
     
     func validateMobile(mobile:String) -> ValidateResult {
-        guard let x = Int(mobile) where (x / 10000000000) == 1 else{
-            return .failed(message:"请输入正确的手机号码")
-        }
+//        guard let x = CLong(mobile) where (x / 10000000000) == 1 else{
+//            return .failed(message:"请输入正确的手机号码")
+//        }
         return mobile.characters.count == self.mobileCountValid ? .succeed : .failed(message:"请输入11位手机号码")
     }
     

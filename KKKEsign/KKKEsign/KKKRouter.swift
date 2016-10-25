@@ -17,6 +17,9 @@ class KKKRouter{
 //        HHRouter.shared().map("/contract/",toControllerClass: ContractViewController.self )
         HHRouter.shared().map("/faceDetect/",toControllerClass: KKKDectViewController.self )
         HHRouter.shared().map("/html/",toControllerClass: ESignWebViewController.self )
+        HHRouter.shared().map("/hand/",toControllerClass: SignatureViewController.self )
+        HHRouter.shared().map("/contractHand/",toControllerClass: ContractSignViewController.self )
+
     }
     
     class func goToLogin(){
@@ -24,14 +27,6 @@ class KKKRouter{
         self.pushViewController(viewController)
     }
 
-    class func goToSignOK(){
-        let viewController = HHRouter.shared().matchController("/html/");
-        let vc: ESignWebViewController = viewController as! ESignWebViewController
-        vc.localFileName = "mian_5_2"
-        appDelegate().window?.rootViewController = viewController
-    }
-    
-    
     class func goToRegister() {
         let viewController = HHRouter.shared().matchController("/register/");
         self.pushViewController(viewController)
@@ -50,8 +45,9 @@ class KKKRouter{
                 vc.localFileName = "userCenter"
         }
         
-        appDelegate().window?.rootViewController = viewController
-        return viewController
+        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
+        appDelegate().window?.rootViewController = nav
+        return nav
     }
     
     class func rootViewController() -> UIViewController {
@@ -74,60 +70,76 @@ class KKKRouter{
 //        }
         //不管什么时候打开都是登录窗口，For Demo
         viewController = HHRouter.shared().matchController("/login");
-
+//        let nav: UINavigationController = UINavigationController.init(rootViewController: viewController)
         return viewController
     }
     
     
-    class func goToWebViewController(urlString:String){
-        let viewController = HHRouter.shared().matchController("/html");
+    class func goBack() {
+        self.popViewController()
+    }
+    
+    class func goToFaceOK(){
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        vc.localFileName = "mian_5_2"
+        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
+        appDelegate().window?.rootViewController = nav
+    }
+    
+    class func goToSignHand(){
+        let viewController = HHRouter.shared().matchController("/hand/");
         self.pushViewController(viewController)
     }
     
+    class func goToSignHandAndContract(){
+        let viewController = HHRouter.shared().matchController("/contractHand/");
+        self.pushViewController(viewController)
+    }
     
     class func goToFace() {
-    let viewController = HHRouter.shared().matchController("/faceDetect/");
-    self.pushViewController(viewController)
-
+        let viewController = HHRouter.shared().matchController("/faceDetect/");
+        self.presentViewController(viewController)
+    }
+    
+    class func goToSMS(){
+        let isReceiver:Bool = KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        vc.localFileName = "x_two"
+        if isReceiver {
+            vc.localFileName = "x_two2"
+        }
+        self.pushViewController(vc)
     }
     
     class func goToMain(){
         let viewController = HHRouter.shared().matchController("/html/");
         let vc: ESignWebViewController = viewController as! ESignWebViewController
         vc.localFileName = "mian"
-        appDelegate().window?.rootViewController = viewController
+        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
+        appDelegate().window?.rootViewController = nav
     }
-
-    //        let time: NSTimeInterval = 0.0
-    //        let delay = dispatch_time(DISPATCH_TIME_NOW,
-    //                                  Int64(time * Double(NSEC_PER_SEC)))
-    //        dispatch_after(delay, dispatch_get_main_queue()) {
-    //            viewController.presentViewController(vc, animated: false, completion: nil)
-    //
-
     
-    class func goToContractList(){
-        let viewController = HHRouter.shared().matchController("/contractList/");
-        self.pushViewController(viewController)
-    }
-
     class func popViewController() {
-        if let navigationController = self.topViewController()! as? UINavigationController {
-            navigationController.popViewControllerAnimated(true)
+        let topVC = self.topViewController()
+
+        if let nav = topVC?.navigationController {
+            nav.popViewControllerAnimated(true)
         } else {
             self.topViewController()?.dismissViewControllerAnimated(true, completion: nil)
         }
     }
     
     class func pushViewController(viewController: UIViewController) {
-        if let navigationController = self.topViewController()! as? UINavigationController {
-            navigationController.pushViewController(viewController, animated: true)
+        let topVC = self.topViewController()
+        if let nav = topVC?.navigationController {
             //避免同时多个ViewController加入堆栈
             dispatch_async(dispatch_get_main_queue()) {
-                navigationController.pushViewController(viewController, animated: true)
+                nav.pushViewController(viewController, animated: true)
             }
         }else{
-            presentViewController(viewController)
+            self.presentViewController(viewController)
         }
     }
 }

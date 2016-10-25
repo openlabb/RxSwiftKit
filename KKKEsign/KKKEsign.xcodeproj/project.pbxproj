@@ -14,6 +14,10 @@
 		4B1865991DB4DE0200F2CC44 /* KKKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1865981DB4DE0200F2CC44 /* KKKLoginViewController.swift */; };
 		4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */; };
 		4B18659D1DB77E1300F2CC44 /* KKK13241327921.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */; };
+		4B30EC031DBF0EE7009C59C6 /* SignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30EC021DBF0EE7009C59C6 /* SignatureViewController.swift */; };
+		4B30EC051DBF0FA9009C59C6 /* ContractSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30EC041DBF0FA9009C59C6 /* ContractSignViewController.swift */; };
+		4B30EC071DBF530D009C59C6 /* KKKBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30EC061DBF530D009C59C6 /* KKKBaseNavigationController.swift */; };
+		4B30EC091DBF608C009C59C6 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B30EC081DBF608C009C59C6 /* DragView.swift */; };
 		4B50930A1DACBE47003AC7B6 /* KKKToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5093091DACBE47003AC7B6 /* KKKToast.swift */; };
 		4B50930C1DACC22F003AC7B6 /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */; };
 		4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */; };
@@ -84,9 +88,13 @@
 		4B1865981DB4DE0200F2CC44 /* KKKLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewController.swift; path = KKKLoginService/KKKLoginViewController.swift; sourceTree = "<group>"; };
 		4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKAppDefaults.swift; sourceTree = "<group>"; };
 		4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KKK13241327921.json; sourceTree = "<group>"; };
+		4B30EC021DBF0EE7009C59C6 /* SignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureViewController.swift; sourceTree = "<group>"; };
+		4B30EC041DBF0FA9009C59C6 /* ContractSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractSignViewController.swift; sourceTree = "<group>"; };
+		4B30EC061DBF530D009C59C6 /* KKKBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKBaseNavigationController.swift; sourceTree = "<group>"; };
+		4B30EC081DBF608C009C59C6 /* DragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
 		4B5093091DACBE47003AC7B6 /* KKKToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKToast.swift; sourceTree = "<group>"; };
 		4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast_Swift.framework; path = "../../Library/Developer/Xcode/DerivedData/KKKEsign-cazialtdobqmeueratsujulywlon/Build/Products/Debug-iphonesimulator/Toast-Swift/Toast_Swift.framework"; sourceTree = "<group>"; };
-		4B5603431D7D5B8A00474AC0 /* 电子签名Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电子签名Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5603431D7D5B8A00474AC0 /* 网签Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网签Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5603481D7D5B8A00474AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B56034B1D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +228,7 @@
 				4BBF01361DB260C600C32804 /* KKKUserService */,
 				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
 				4BB0AF921DAFE06C00167261 /* KKKRouter.swift */,
+				4B30EC061DBF530D009C59C6 /* KKKBaseNavigationController.swift */,
 				4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */,
 				4B5093091DACBE47003AC7B6 /* KKKToast.swift */,
 				4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */,
@@ -263,7 +272,7 @@
 		4B5603441D7D5B8A00474AC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B5603431D7D5B8A00474AC0 /* 电子签名Demo.app */,
+				4B5603431D7D5B8A00474AC0 /* 网签Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -301,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */,
+				4B30EC081DBF608C009C59C6 /* DragView.swift */,
+				4B30EC021DBF0EE7009C59C6 /* SignatureViewController.swift */,
+				4B30EC041DBF0FA9009C59C6 /* ContractSignViewController.swift */,
 			);
 			name = Signature;
 			sourceTree = "<group>";
@@ -505,7 +517,7 @@
 			);
 			name = KKKEsign;
 			productName = KKKEsign;
-			productReference = 4B5603431D7D5B8A00474AC0 /* 电子签名Demo.app */;
+			productReference = 4B5603431D7D5B8A00474AC0 /* 网签Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -641,11 +653,13 @@
 				4BF4427C1D87EFC70039D14A /* IFlyFaceResultDetector.m in Sources */,
 				4BF442761D87EFC70039D14A /* CaptureSessionManager.m in Sources */,
 				4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */,
+				4B30EC031DBF0EE7009C59C6 /* SignatureViewController.swift in Sources */,
 				4BC449B01D919B010046966A /* testkkViewController.swift in Sources */,
 				4B967A731DBE011D002B6E54 /* FaceViewController.swift in Sources */,
 				4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */,
 				4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */,
 				4BF442711D87EFC70039D14A /* KKKDetectValidatorEye.swift in Sources */,
+				4B30EC091DBF608C009C59C6 /* DragView.swift in Sources */,
 				4BF442701D87EFC70039D14A /* KKKDetectStatusValidator.swift in Sources */,
 				4BF442781D87EFC70039D14A /* IFlyFaceImage.m in Sources */,
 				4BF442771D87EFC70039D14A /* CalculatorTools.m in Sources */,
@@ -660,8 +674,10 @@
 				4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */,
 				4B0DE09D1DAA303700552A3B /* KKKEsignAPI.swift in Sources */,
 				4BF4426F1D87EFC70039D14A /* KKKDetector.swift in Sources */,
+				4B30EC071DBF530D009C59C6 /* KKKBaseNavigationController.swift in Sources */,
 				4BF4427A1D87EFC70039D14A /* UIImage+Extensions.m in Sources */,
 				4B18659B1DB75A8600F2CC44 /* KKKAppDefaults.swift in Sources */,
+				4B30EC051DBF0FA9009C59C6 /* ContractSignViewController.swift in Sources */,
 				4BF442721D87EFC70039D14A /* KKKDetectValidatorHead.swift in Sources */,
 				4BD903E81DBCFFE000AACEFB /* ESignWebViewController.swift in Sources */,
 				4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */,
@@ -790,7 +806,7 @@
 				INFOPLIST_FILE = KKKEsign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microfastup.HuangtaijiWaimaiFirTest;
-				PRODUCT_NAME = "电子签名Demo";
+				PRODUCT_NAME = "网签Demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/KKKEsign/KKKFaceService/KKKFaceService-Bridged-Header.h";
 			};
 			name = Debug;
@@ -810,7 +826,7 @@
 				INFOPLIST_FILE = KKKEsign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microfastup.HuangtaijiWaimaiFirTest;
-				PRODUCT_NAME = "电子签名Demo";
+				PRODUCT_NAME = "网签Demo";
 				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/KKKEsign/KKKFaceService/KKKFaceService-Bridged-Header.h";
 			};
 			name = Release;

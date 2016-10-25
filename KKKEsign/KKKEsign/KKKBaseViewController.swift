@@ -14,6 +14,43 @@ extension UIViewController {
             KKKToast.showToast(message)
     }
     
+    func setLeftNavBarBack(){
+        self.navigationController?.navigationBar.backgroundColor = UIColor.redColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        self.navigationController?.navigationBar.barTintColor = kBaseColor
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor(),NSFontAttributeName:UIFont.systemFontOfSize(17)]
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: self.backButton())
+        
+        let item = UIBarButtonItem(title: " < 返回", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(goBackBaseUIViewController))
+        self.navigationItem.leftBarButtonItem = item
+
+    }
+    
+    
+    func backButton() -> UIButton {
+//        let icon : UIImage = UIImage.init(named: "back")!
+        let btn :UIButton = UIButton()
+        btn.backgroundColor = kBaseColor
+//        btn.setImage(icon, forState: .Normal)
+//        btn.setImage(icon, forState: .Highlighted)
+//        btn.setBackgroundImage(icon, forState: .Normal)
+//        btn.setBackgroundImage(icon, forState: .Highlighted)
+//        btn.imageEdgeInsets = UIEdgeInsetsMake(0, -12, 0, 0);
+        btn.setTitle("返回", forState: .Normal)
+        btn.setTitle("返回", forState: .Highlighted)
+        //相对图片
+//        btn.titleEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
+        btn.titleLabel?.textColor = UIColor.whiteColor()
+        btn.titleLabel?.font = UIFont.systemFontOfSize(17)
+        btn.addTarget(self, action: #selector(goBackBaseUIViewController), forControlEvents: UIControlEvents.TouchUpInside)
+        return btn
+    }
+    
+    func goBackBaseUIViewController()  {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+
+    
     // MARK: -------Life Cycle
     //    //单例
     //    static func shareOne()->KKKLoginViewController{

@@ -23,7 +23,16 @@ public class ESignWebViewController: KKKWebViewController {
         self.runPluginJS(["Console", "Face","testjs"])
         self.loadFile()
         self.wk.scrollView.scrollEnabled = false
+        
     }
+    
+    override public func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if self.navigationController != nil {
+            self.navigationController?.navigationBar.hidden = true
+        }
+    }
+    
     
     public func  loadFile()  {
         if let fileName = self.localFileName {
@@ -81,9 +90,13 @@ public class ESignWebViewController: KKKWebViewController {
         arr.append("mian_6_1.html")
         arr.append("mian_7_1.html")
         arr.append("faceSign.html")
+        arr.append("mian_3_1.html")
         arr.append("mian_3_2.html")
         arr.append("x_two.html")
+        arr.append("x_two.html")
+        arr.append("x_two2.html")
         arr.append("x_one.html")
+        arr.append("mian_1.html")
         //这些页面都涉及到跳转登录界面，不让跳
         if arr.contains(path as String) {
             //签约识别

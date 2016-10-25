@@ -17,6 +17,15 @@ class FaceViewController:KKKWebPlugin{
         KKKRouter.goToLogin()
     }
     
+    func goSignHand()  {
+        KKKRouter.goToSignHand()
+    }
+    
+    func goBack()  {
+        KKKRouter.goBack()
+    }
+
+    
     
     class func deleteFaceGID() {
         let userDefault = NSUserDefaults.standardUserDefaults()

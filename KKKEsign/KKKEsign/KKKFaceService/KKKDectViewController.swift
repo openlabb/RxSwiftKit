@@ -64,19 +64,26 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.title = "活体人脸识别"
-        self.edgesForExtendedLayout = .None;
-        self.extendedLayoutIncludesOpaqueBars = false;
-        self.modalPresentationCapturesStatusBarAppearance = false;
+
+//        self.edgesForExtendedLayout = .None;
+//        self.extendedLayoutIncludesOpaqueBars = false;
+//        self.modalPresentationCapturesStatusBarAppearance = false;
 //        self.navigationController!.navigationBar.translucent = false;
+//        self.navigationController?.navigationBar.hidden = false
+//        self.navigationController?.setToolbarHidden(false, animated: false)
+        self.view.backgroundColor = UIColor.whiteColor()
+//        self.navigationController?.navigationBar.hidden = false
         
-        self.view.backgroundColor = UIColor.redColor()
         
         self.configSubViews()
         
         self.loadConfigData()
         
+
+        
     }
+    
+    
     
     
     override func viewDidDisappear(animated: Bool) {
@@ -195,6 +202,54 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
                 superView.addSubview(infoImage)
         infoImage.hidden = true
 
+        self.addTopBar()
+        
+    }
+    
+    func addTopBar() {
+        let v = self.view
+        let backView = UIView()
+        v.addSubview(backView)
+        backView.snp_makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.width.equalTo(v)
+            make.height.equalTo(60)
+        }
+        backView.backgroundColor = UIColor.init(red: 62/255.0, green: 64/255.0, blue: 67/255.0, alpha: 1)
+
+        let lbl:UILabel = UILabel()
+        backView.addSubview(lbl)
+        lbl.snp_makeConstraints { (make) in
+            make.top.equalTo(10)
+            make.centerX.equalTo(backView).offset(10)
+            make.centerY.equalTo(backView)
+            make.height.equalTo(40)
+            make.width.equalTo(100)
+        }
+        lbl.textColor = UIColor.whiteColor()
+        lbl.font = UIFont.systemFontOfSize(18)
+        lbl.text = "刷脸登录"
+        if self.isRegister{
+            lbl.text = "刷脸登录"
+        }
+
+        
+        let btn:UIButton = UIButton()
+        backView.addSubview(btn)
+        btn.snp_makeConstraints { (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(10)
+            make.centerY.equalTo(backView)
+            make.height.equalTo(40)
+            make.width.equalTo(20)
+        }
+        btn.setImage(UIImage.init(named: "back"), forState: .Normal)
+        btn.addTarget(self, action: #selector(goBack), forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    func goBack(){
+        KKKRouter.popViewController()
     }
     
     func configSubViews() -> Void {
@@ -204,7 +259,7 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
         self.addStillImageOutput()
         self.captureManager?.setup()
         self.captureManager?.addObserver()
-        self.addRightBarAction()
+//        self.addRightBarAction()
     }
     
     func addLeftBarAction() -> Void {
@@ -441,6 +496,7 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
                 
                 (dicPerson as! NSMutableDictionary).setValue("", forKey: RECT_ORI)
                 arrPersons.addObject(dicPerson as! NSMutableDictionary)
+        
                 
                 dicPerson = nil
                 
@@ -729,7 +785,6 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
             print(info)
 //            addLeftBarAction()
             self.showSuccessAndJump()
-
         default:
             info = "默认检测人脸ing..."
         }
@@ -743,15 +798,17 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
         self.infoLabel.hidden = true
         self.infoImage.hidden = false
 
-        var infoName = "registerOK"
-        if !self.isRegister {
-            infoName = "recognizedOK"
-        }
+        let isReceiver = KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver
         
-        if KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver {
-            infoName = "recognizedOKxxx"
+        var infoName = "recognizedOK"
+        if isReceiver {
+            infoName = "recognizedOKReceiver"
+        }else {
+            if self.isRegister{
+                infoName = "registerOK"
+            }else{
+            }
         }
-        
         
         infoImage.image = UIImage.init(named: infoName)
         let superView = self.view
@@ -759,10 +816,14 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
             make.top.equalTo(superView).offset(80)
             make.centerX.equalTo(superView)
             make.height.equalTo(50)
-            if self.isRegister {
-                make.width.equalTo(infoImage.snp_height).multipliedBy(470/100)
-            }else{
+            if isReceiver {
                 make.width.equalTo(infoImage.snp_height).multipliedBy(500/100)
+            }else {
+                if self.isRegister{
+                    make.width.equalTo(infoImage.snp_height).multipliedBy(470/100)
+                }else{
+                    make.width.equalTo(infoImage.snp_height).multipliedBy(500/100)
+                }
             }
         }
         
@@ -776,10 +837,9 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
                                   Int64(time * Double(NSEC_PER_SEC)))
         dispatch_after(delay, dispatch_get_main_queue()) {
             
-            
-            if(KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver )
+            if isReceiver
             {
-                KKKRouter.goToSignOK()
+                KKKRouter.goToFaceOK()
             }else{
                 if(self.isRegister)
                 {
