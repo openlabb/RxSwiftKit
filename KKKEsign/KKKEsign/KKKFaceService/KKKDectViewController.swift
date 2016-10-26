@@ -839,11 +839,11 @@ class KKKDectViewController: UIViewController,IFlyFaceRequestDelegate,CaptureMan
             
             if isReceiver
             {
-                KKKRouter.goToFaceOK()
+                KKKRouter.goToFaceOKForReceiver()
             }else{
                 if(self.isRegister)
                 {
-                    KKKRouter.goToMain()
+                    KKKRouter.goToFaceRegisterOK()
                 }else{
                     KKKRouter.goToLogin()
                 }

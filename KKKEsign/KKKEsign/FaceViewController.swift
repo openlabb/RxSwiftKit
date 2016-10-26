@@ -22,7 +22,7 @@ class FaceViewController:KKKWebPlugin{
     }
     
     func goBack()  {
-        KKKRouter.goBack()
+        KKKRouter.popViewController()
     }
 
     

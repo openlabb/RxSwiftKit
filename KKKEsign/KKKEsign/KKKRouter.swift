@@ -32,24 +32,6 @@ class KKKRouter{
         self.pushViewController(viewController)
     }
     
-    class func backToHome()->UIViewController{
-        let viewController = HHRouter.shared().matchController("/html/");
-        let vc: ESignWebViewController = viewController as! ESignWebViewController
-        let user:KKKUser? = KKKUserService.shareInstance().user
-        print("-----当前登录用户 \(user)")
-        switch KKKUserService.shareInstance().userType.value
-        {
-            case KKKUserType.KKKUserTypeReceiver:
-                vc.localFileName = "mian_3_2"
-            default:
-                vc.localFileName = "userCenter"
-        }
-        
-        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
-        appDelegate().window?.rootViewController = nav
-        return nav
-    }
-    
     class func rootViewController() -> UIViewController {
         let viewController:UIViewController
 //        if KKKUserService.shareInstance().isLogin {
@@ -74,12 +56,39 @@ class KKKRouter{
         return viewController
     }
     
-    
-    class func goBack() {
-        self.popViewController()
+    //登录成功后跳转
+    class func goToLoginOK()->UIViewController{
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        let user:KKKUser? = KKKUserService.shareInstance().user
+        print("-----当前登录用户 \(user)")
+        switch KKKUserService.shareInstance().userType.value
+        {
+        case KKKUserType.KKKUserTypeReceiver:
+            //签收人登录后，默认收到[待签收消息]
+            vc.localFileName = "mian_3_2"
+        default:
+            //发送人登录默认走[用户中心]去人脸注册
+            vc.localFileName = "userCenter"
+        }
+        
+        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
+        appDelegate().window?.rootViewController = nav
+        return nav
     }
     
-    class func goToFaceOK(){
+    
+    //发送人:人脸注册完成后跳转[主菜单]
+    class func goToFaceRegisterOK(){
+        let viewController = HHRouter.shared().matchController("/html/");
+        let vc: ESignWebViewController = viewController as! ESignWebViewController
+        vc.localFileName = "mian"
+        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
+        appDelegate().window?.rootViewController = nav
+    }
+    
+    //签收人:人脸识别成功表示签收跳转[申请公证]-签收人单个合同的公证界面
+    class func goToFaceOKForReceiver(){
         let viewController = HHRouter.shared().matchController("/html/");
         let vc: ESignWebViewController = viewController as! ESignWebViewController
         vc.localFileName = "mian_5_2"
@@ -87,21 +96,25 @@ class KKKRouter{
         appDelegate().window?.rootViewController = nav
     }
     
+    //跳转[手签]
     class func goToSignHand(){
         let viewController = HHRouter.shared().matchController("/hand/");
         self.pushViewController(viewController)
     }
     
+    //跳转带[手签的合同详情页面]
     class func goToSignHandAndContract(){
         let viewController = HHRouter.shared().matchController("/contractHand/");
         self.pushViewController(viewController)
     }
     
+    //跳转[人脸检测]
     class func goToFace() {
         let viewController = HHRouter.shared().matchController("/faceDetect/");
         self.presentViewController(viewController)
     }
     
+    //跳转[短信确认]
     class func goToSMS(){
         let isReceiver:Bool = KKKUserService.shareInstance().userType.value == KKKUserType.KKKUserTypeReceiver
         let viewController = HHRouter.shared().matchController("/html/");
@@ -113,13 +126,6 @@ class KKKRouter{
         self.pushViewController(vc)
     }
     
-    class func goToMain(){
-        let viewController = HHRouter.shared().matchController("/html/");
-        let vc: ESignWebViewController = viewController as! ESignWebViewController
-        vc.localFileName = "mian"
-        let nav: KKKBaseNavigationController = KKKBaseNavigationController.init(rootViewController: vc)
-        appDelegate().window?.rootViewController = nav
-    }
     
     class func popViewController() {
         let topVC = self.topViewController()

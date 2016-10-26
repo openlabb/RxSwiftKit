@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B5603421D7D5B8A00474AC0"
-               BuildableName = "&#x7535;&#x5b50;&#x7b7e;&#x540d;Demo.app"
+               BuildableName = "&#x7f51;&#x7b7e;Demo.app"
                BlueprintName = "KKKEsign"
                ReferencedContainer = "container:KKKEsign.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5603421D7D5B8A00474AC0"
-            BuildableName = "&#x7535;&#x5b50;&#x7b7e;&#x540d;Demo.app"
+            BuildableName = "&#x7f51;&#x7b7e;Demo.app"
             BlueprintName = "KKKEsign"
             ReferencedContainer = "container:KKKEsign.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5603421D7D5B8A00474AC0"
-            BuildableName = "&#x7535;&#x5b50;&#x7b7e;&#x540d;Demo.app"
+            BuildableName = "&#x7f51;&#x7b7e;Demo.app"
             BlueprintName = "KKKEsign"
             ReferencedContainer = "container:KKKEsign.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B5603421D7D5B8A00474AC0"
-            BuildableName = "&#x7535;&#x5b50;&#x7b7e;&#x540d;Demo.app"
+            BuildableName = "&#x7f51;&#x7b7e;Demo.app"
             BlueprintName = "KKKEsign"
             ReferencedContainer = "container:KKKEsign.xcodeproj">
          </BuildableReference>

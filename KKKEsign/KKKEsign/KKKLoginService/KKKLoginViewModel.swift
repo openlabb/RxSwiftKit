@@ -50,7 +50,7 @@ class KKKLoginViewModel{
                 KKKRouter.goToRegister()
             case .KKKLoginStatusLogged:
                 //跳到主窗口
-                KKKRouter.backToHome()
+                KKKRouter.goToLoginOK()
                 //写用户信息
                 
             default: break
