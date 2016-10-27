@@ -21,19 +21,16 @@
 		4B50930A1DACBE47003AC7B6 /* KKKToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5093091DACBE47003AC7B6 /* KKKToast.swift */; };
 		4B50930C1DACC22F003AC7B6 /* Toast_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */; };
 		4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */; };
-		4B5603491D7D5B8A00474AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5603481D7D5B8A00474AC0 /* ViewController.swift */; };
 		4B56034C1D7D5B8A00474AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034A1D7D5B8A00474AC0 /* Main.storyboard */; };
 		4B56034E1D7D5B8A00474AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */; };
 		4B5603511D7D5B8A00474AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B56034F1D7D5B8A00474AC0 /* LaunchScreen.storyboard */; };
 		4B56387E1DA21BC000D8BC56 /* KKKpin.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B56387D1DA21BC000D8BC56 /* KKKpin.json */; };
 		4B8036D21D8A52C5000D2FF6 /* KKKLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */; };
-		4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */; };
-		4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */; };
 		4B8036DA1D8AA2C8000D2FF6 /* SignatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */; };
 		4B8036DC1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */; };
 		4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */; };
 		4B967A711DBDFDDE002B6E54 /* plugins in Resources */ = {isa = PBXBuildFile; fileRef = 4B967A701DBDFDDE002B6E54 /* plugins */; };
-		4B967A731DBE011D002B6E54 /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B967A721DBE011D002B6E54 /* FaceViewController.swift */; };
+		4B967A731DBE011D002B6E54 /* EsignPlug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B967A721DBE011D002B6E54 /* EsignPlug.swift */; };
 		4BB0AF911DAFDF7200167261 /* KKKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */; };
 		4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0AF921DAFE06C00167261 /* KKKRouter.swift */; };
 		4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBF01371DB260FE00C32804 /* KKKUserService.swift */; };
@@ -96,20 +93,17 @@
 		4B50930B1DACC22F003AC7B6 /* Toast_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Toast_Swift.framework; path = "../../Library/Developer/Xcode/DerivedData/KKKEsign-cazialtdobqmeueratsujulywlon/Build/Products/Debug-iphonesimulator/Toast-Swift/Toast_Swift.framework"; sourceTree = "<group>"; };
 		4B5603431D7D5B8A00474AC0 /* 网签Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网签Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B5603481D7D5B8A00474AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4B56034B1D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B56034D1D7D5B8A00474AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5603501D7D5B8A00474AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5603521D7D5B8A00474AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B56387D1DA21BC000D8BC56 /* KKKpin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = KKKpin.json; sourceTree = "<group>"; };
 		4B8036D11D8A52C5000D2FF6 /* KKKLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKLoginView.swift; sourceTree = "<group>"; };
-		4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractListViewController.swift; path = Contracts/ContractListViewController.swift; sourceTree = "<group>"; };
-		4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContractViewController.swift; path = Contracts/ContractViewController.swift; sourceTree = "<group>"; };
 		4B8036D91D8AA2C8000D2FF6 /* SignatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignatureView.swift; path = KKKSignature/SignatureView.swift; sourceTree = "<group>"; };
 		4B8036DB1D8AEC8F000D2FF6 /* KKKLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKLoginViewModel.swift; path = KKKLoginService/KKKLoginViewModel.swift; sourceTree = "<group>"; };
 		4B8036DD1D8AEDC3000D2FF6 /* KKKValidateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKValidateService.swift; path = KKKLoginService/KKKValidateService.swift; sourceTree = "<group>"; };
 		4B967A701DBDFDDE002B6E54 /* plugins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plugins; sourceTree = "<group>"; };
-		4B967A721DBE011D002B6E54 /* FaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
+		4B967A721DBE011D002B6E54 /* EsignPlug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsignPlug.swift; sourceTree = "<group>"; };
 		4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKBaseViewController.swift; sourceTree = "<group>"; };
 		4BB0AF921DAFE06C00167261 /* KKKRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKKRouter.swift; sourceTree = "<group>"; };
 		4BBF01371DB260FE00C32804 /* KKKUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KKKUserService.swift; path = KKKUserService/KKKUserService.swift; sourceTree = "<group>"; };
@@ -221,20 +215,12 @@
 		4B0DB29B1DAF62B500023A68 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4B2F60181DC1DD48003572BC /* KKKAppBase */,
 				4BD903441DB9C3F700AACEFB /* KKKH5Container */,
 				4BF442481D87EFC70039D14A /* KKKFaceService */,
 				4B0DE0971DAA2B6300552A3B /* KKKNetWorking */,
 				4BF442DB1D88FEAB0039D14A /* KKKLoginService */,
 				4BBF01361DB260C600C32804 /* KKKUserService */,
-				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
-				4BB0AF921DAFE06C00167261 /* KKKRouter.swift */,
-				4B30EC061DBF530D009C59C6 /* KKKBaseNavigationController.swift */,
-				4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */,
-				4B5093091DACBE47003AC7B6 /* KKKToast.swift */,
-				4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */,
-				4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */,
-				4BC449AF1D919B010046966A /* testkkViewController.swift */,
-				4B5603481D7D5B8A00474AC0 /* ViewController.swift */,
 				4B56034A1D7D5B8A00474AC0 /* Main.storyboard */,
 			);
 			name = App;
@@ -257,6 +243,21 @@
 				4B0DE09F1DAA30F100552A3B /* KKKItems.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4B2F60181DC1DD48003572BC /* KKKAppBase */ = {
+			isa = PBXGroup;
+			children = (
+				4B5603461D7D5B8A00474AC0 /* AppDelegate.swift */,
+				4BB0AF921DAFE06C00167261 /* KKKRouter.swift */,
+				4B30EC061DBF530D009C59C6 /* KKKBaseNavigationController.swift */,
+				4BB0AF901DAFDF7200167261 /* KKKBaseViewController.swift */,
+				4B5093091DACBE47003AC7B6 /* KKKToast.swift */,
+				4B0DB29C1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift */,
+				4B18659A1DB75A8600F2CC44 /* KKKAppDefaults.swift */,
+				4BC449AF1D919B010046966A /* testkkViewController.swift */,
+			);
+			name = KKKAppBase;
 			sourceTree = "<group>";
 		};
 		4B56033A1D7D5B8A00474AC0 = {
@@ -282,7 +283,6 @@
 			children = (
 				4B0DB29B1DAF62B500023A68 /* App */,
 				4B8036D81D8AA27E000D2FF6 /* Signature */,
-				4B8036D31D8AA196000D2FF6 /* Contract */,
 				4BF4429F1D87F0E10039D14A /* Support */,
 			);
 			path = KKKEsign;
@@ -295,15 +295,6 @@
 				4B18659C1DB77E1300F2CC44 /* KKK13241327921.json */,
 			);
 			name = json;
-			sourceTree = "<group>";
-		};
-		4B8036D31D8AA196000D2FF6 /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-				4B8036D41D8AA1F8000D2FF6 /* ContractListViewController.swift */,
-				4B8036D61D8AA24C000D2FF6 /* ContractViewController.swift */,
-			);
-			name = Contract;
 			sourceTree = "<group>";
 		};
 		4B8036D81D8AA27E000D2FF6 /* Signature */ = {
@@ -332,7 +323,7 @@
 				4BD904901DBDAB8B00AACEFB /* www */,
 				4BD903451DB9C41C00AACEFB /* KKKWebViewController.swift */,
 				4BD903E71DBCFFE000AACEFB /* ESignWebViewController.swift */,
-				4B967A721DBE011D002B6E54 /* FaceViewController.swift */,
+				4B967A721DBE011D002B6E54 /* EsignPlug.swift */,
 			);
 			name = KKKH5Container;
 			sourceTree = "<group>";
@@ -638,14 +629,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BBF01381DB260FE00C32804 /* KKKUserService.swift in Sources */,
-				4B5603491D7D5B8A00474AC0 /* ViewController.swift in Sources */,
 				4BF4427D1D87EFC70039D14A /* IFlyFaceResultKeys.m in Sources */,
 				4B5603471D7D5B8A00474AC0 /* AppDelegate.swift in Sources */,
 				4B0DB29D1DAF630200023A68 /* Appdelegate+KKKGlobalAction.swift in Sources */,
 				4B0DE0991DAA2F2B00552A3B /* Observable+KKKNetworking.swift in Sources */,
 				4BB0AF911DAFDF7200167261 /* KKKBaseViewController.swift in Sources */,
 				4BF4427B1D87EFC70039D14A /* PermissionDetector.m in Sources */,
-				4B8036D71D8AA24C000D2FF6 /* ContractViewController.swift in Sources */,
 				4BF442751D87EFC70039D14A /* CaptureManager.m in Sources */,
 				4B1865991DB4DE0200F2CC44 /* KKKLoginViewController.swift in Sources */,
 				4BD903461DB9C41C00AACEFB /* KKKWebViewController.swift in Sources */,
@@ -655,7 +644,7 @@
 				4BB0AF931DAFE06C00167261 /* KKKRouter.swift in Sources */,
 				4B30EC031DBF0EE7009C59C6 /* SignatureViewController.swift in Sources */,
 				4BC449B01D919B010046966A /* testkkViewController.swift in Sources */,
-				4B967A731DBE011D002B6E54 /* FaceViewController.swift in Sources */,
+				4B967A731DBE011D002B6E54 /* EsignPlug.swift in Sources */,
 				4B8036DE1D8AEDC3000D2FF6 /* KKKValidateService.swift in Sources */,
 				4BF4426E1D87EFC70039D14A /* KKKDectViewController.swift in Sources */,
 				4BF442711D87EFC70039D14A /* KKKDetectValidatorEye.swift in Sources */,
@@ -680,7 +669,6 @@
 				4B30EC051DBF0FA9009C59C6 /* ContractSignViewController.swift in Sources */,
 				4BF442721D87EFC70039D14A /* KKKDetectValidatorHead.swift in Sources */,
 				4BD903E81DBCFFE000AACEFB /* ESignWebViewController.swift in Sources */,
-				4B8036D51D8AA1F8000D2FF6 /* ContractListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,17 +10,16 @@ import Foundation
 import WebKit
 
 public class ESignWebViewController: KKKWebViewController {
-
+    
     public var localFileName: String! {
         didSet{
             
         }
     }
-
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.runPluginJS(["Console", "Face","testjs"])
+        self.runPluginJS(["Console", "Plug","testjs"])
         self.loadFile()
         self.wk.scrollView.scrollEnabled = false
         
@@ -48,7 +47,7 @@ public class ESignWebViewController: KKKWebViewController {
         } else {
             NSLog("ERROR!! Please set self.localFileName before viewDidAppear.")
         }
-
+        
     }
     
     override public func prefersStatusBarHidden()->Bool{
@@ -79,28 +78,28 @@ public class ESignWebViewController: KKKWebViewController {
         print("---页面加载完成:didFinishNavigation:--\n\r✅--\(path)")
         if path.isEqualToString("userID.html") || path.isEqualToString("userCenter.html") {
             //人脸注册
-            FaceViewController.deleteFaceGID()
-            self.runPluginJS(["Console", "Face","testjs"])
+            EsignPlug.deleteFaceGID()
+            self.runPluginJS(["Console", "Plug","testjs"])
         }
-        
-        var arr:Array<String> = []
-        
-        arr.append("x_one2.html")
-        arr.append("mian_5_2.html")
-        arr.append("mian_6_1.html")
-        arr.append("mian_7_1.html")
-        arr.append("faceSign.html")
-        arr.append("mian_3_1.html")
-        arr.append("mian_3_2.html")
-        arr.append("x_two.html")
-        arr.append("x_two.html")
-        arr.append("x_two2.html")
-        arr.append("x_one.html")
-        arr.append("mian_1.html")
-        //这些页面都涉及到跳转登录界面，不让跳
-        if arr.contains(path as String) {
-            //签约识别
-            self.runPluginJS(["Console", "Face","testjs"])
+        else{
+            var arr:Array<String> = []
+            arr.append("x_one2.html")
+            arr.append("mian_5_2.html")
+            arr.append("mian_6_1.html")
+            arr.append("mian_7_1.html")
+            arr.append("faceSign.html")
+            arr.append("mian_3_1.html")
+            arr.append("mian_3_2.html")
+            arr.append("x_two.html")
+            arr.append("x_two.html")
+            arr.append("x_two2.html")
+            arr.append("x_one.html")
+            arr.append("mian_1.html")
+            //这些页面都涉及到跳转到原生的界面，不让走html
+            if arr.contains(path as String) {
+                //签约识别
+                self.runPluginJS(["Console", "Plug","testjs"])
+            }
         }
     }
     
@@ -117,7 +116,7 @@ public class ESignWebViewController: KKKWebViewController {
         
         
     }
-
+    
     
     
 }

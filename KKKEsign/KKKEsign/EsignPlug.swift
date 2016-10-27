@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FaceViewController:KKKWebPlugin{
+class EsignPlug:KKKWebPlugin{
     func goDetect()  {
         KKKRouter.goToFace()
     }
@@ -25,8 +25,6 @@ class FaceViewController:KKKWebPlugin{
         KKKRouter.popViewController()
     }
 
-    
-    
     class func deleteFaceGID() {
         let userDefault = NSUserDefaults.standardUserDefaults()
         userDefault.removeObjectForKey("faceGID")

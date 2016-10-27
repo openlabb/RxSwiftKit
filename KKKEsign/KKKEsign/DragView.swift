@@ -12,11 +12,11 @@ class DragView: UIImageView {
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
 
         let touch :UITouch = touches.first!
-        let currentPoint : CGPoint = touch.locationInView(self.superview)
-        let previousPoint : CGPoint = touch.previousLocationInView(self.superview)
+        let currentP : CGPoint = touch.locationInView(self.superview)
+        let preP : CGPoint = touch.previousLocationInView(self.superview)
         var center :CGPoint = self.center
-        center.x += (currentPoint.x - previousPoint.x);
-        center.y += (currentPoint.y - previousPoint.y);
+        center.x += (currentP.x - preP.x);
+        center.y += (currentP.y - preP.y);
         self.center = center;
     }
     

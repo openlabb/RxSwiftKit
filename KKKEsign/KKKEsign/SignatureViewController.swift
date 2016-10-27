@@ -12,6 +12,7 @@ class SignatureViewController: UIViewController{
     let redrawBtn:UIButton = UIButton()
     var signView :SignatureView = SignatureView.init(frame: CGRectZero)
     let imageView:UIImageView = UIImageView()
+    
     // MARK: -------Life Cycle
     
     //单例

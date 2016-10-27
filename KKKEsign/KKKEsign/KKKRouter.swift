@@ -13,8 +13,6 @@ class KKKRouter{
         HHRouter.shared().map("/user/:userId/",toControllerClass: KKKRegisterViewController.self )
         HHRouter.shared().map("/register/",toControllerClass: KKKRegisterViewController.self )
         HHRouter.shared().map("/login/",toControllerClass: KKKLoginViewController.self )
-//        HHRouter.shared().map("/contractList/",toControllerClass: ContractListViewController.self )
-//        HHRouter.shared().map("/contract/",toControllerClass: ContractViewController.self )
         HHRouter.shared().map("/faceDetect/",toControllerClass: KKKDectViewController.self )
         HHRouter.shared().map("/html/",toControllerClass: ESignWebViewController.self )
         HHRouter.shared().map("/hand/",toControllerClass: SignatureViewController.self )
@@ -50,6 +48,7 @@ class KKKRouter{
 //        }else{
 //            viewController = HHRouter.shared().matchController("/login");
 //        }
+        
         //不管什么时候打开都是登录窗口，For Demo
         viewController = HHRouter.shared().matchController("/login");
 //        let nav: UINavigationController = UINavigationController.init(rootViewController: viewController)
